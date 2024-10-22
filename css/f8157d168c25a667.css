@@ -17465,10 +17465,6 @@ img {
         display: flex
     }
 
-    .sm\:hidden {
-        display: none
-    }
-
     .sm\:h-\[110px\] {
         height: 110px
     }
@@ -18002,6 +17998,10 @@ img {
 
     .sm\:text-start {
         text-align: start
+    }
+
+    .sm\:text-center{
+        text-align: center;
     }
 
     .sm\:text-2xl {
@@ -24107,4 +24107,10 @@ img {
 
 .slick-arrow.slick-hidden {
     display: none
+}
+
+@media screen and (max-width: 500px){
+    .sm\:hidden{
+        display: none !important;
+    }
 }
