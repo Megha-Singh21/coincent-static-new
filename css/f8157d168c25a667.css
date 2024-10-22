@@ -24113,4 +24113,7 @@ img {
     .sm\:hidden{
         display: none !important;
     }
+    .sm\:text-center{
+        text-align: center !important;
+    }
 }
