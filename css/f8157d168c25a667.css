@@ -7892,7 +7892,7 @@ video {
 }
 
 .h-\[544px\] {
-    height: 544px
+    height: fit-content !important;
 }
 
 .h-\[54px\] {
@@ -9264,7 +9264,7 @@ video {
 }
 
 .max-w-\[380px\] {
-    max-width: 380px
+    max-width: 380px;
 }
 
 .max-w-\[381px\] {
@@ -9288,7 +9288,7 @@ video {
 }
 
 .max-w-\[430px\] {
-    max-width: 430px
+    max-width: 280px !important
 }
 
 .max-w-\[462px\] {
@@ -24128,5 +24128,45 @@ img {
     }
     .sm\:d-block{
         display: block !important;
+    }
+    .p-4 {
+        padding: 0.5rem !important;
+    }
+    .py-4 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    .px-16 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .px-4 {
+        padding-right: 0.5rem !important;
+        padding-left: 0.5rem !important;
+    }
+    .text-\[32px\] {
+        font-size: 30px;
+    }
+
+    .text-\[40px\] {
+        font-size: 30px;
+    }
+
+    .h-\[754px\] {
+        height: auto;
+    }
+
+    .px-6 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .py-3 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+
+    .owl-carousel .item{
+        width: auto !important;
     }
 }
