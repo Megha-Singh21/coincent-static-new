@@ -7892,7 +7892,7 @@ video {
 }
 
 .h-\[544px\] {
-    height: fit-content !important;
+    height: 544px;
 }
 
 .h-\[54px\] {
@@ -9288,7 +9288,7 @@ video {
 }
 
 .max-w-\[430px\] {
-    max-width: 280px !important
+    max-width: 430px
 }
 
 .max-w-\[462px\] {
@@ -24168,5 +24168,8 @@ img {
 
     .owl-carousel .item{
         width: auto !important;
+    }
+    .h-\[544px\] {
+        height: fit-content;
     }
 }
