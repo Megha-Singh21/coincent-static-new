@@ -275,7 +275,9 @@ a:hover {
 .section-5 img:hover {
     opacity: 1;
 }
-
+.m-view {
+    display: none;
+}
 .section-6 .card {
     overflow: hidden;
     border-radius: 10px;
@@ -542,6 +544,21 @@ footer a i:hover {
 
     .section-4 .card {
         height: fit-content;
+    }
+    .testi-box_content {
+        display: block;
+    }
+    .section-5 img {
+    opacity: 1;
+}
+    .d-view{
+        display: none;
+    }
+    .m-view{
+        display: block;
+    }
+    .head-2 {
+        font-size: 30px;
     }
 
 }
