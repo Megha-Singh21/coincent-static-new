@@ -574,12 +574,12 @@ footer a i:hover {
 
 .vertical-tab .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-    background-color: rgb(239 255 240 / var(--tw-bg-opacity)) !important;
+    background-color: #0D5EF4 !important;
 }
 
-.vertical-tab .nav-pills .nav-link.active,
-.nav-pills .nav-link.active>.items-center .text-dark-blue {
-    color: rgb(0 194 43 / var(--tw-text-opacity)) !important;
+.vertical-tab .nav-pills .nav-link.active, 
+.vertical-tab .nav-pills .nav-link.active>.items-center .text-dark-blue {
+    color: #fff !important;
 }
 
 .accordion-button:not(.collapsed) {
@@ -654,5 +654,13 @@ footer a i:hover {
     .pdp-hero-section h1 {
         font-size: 30px;
         margin-bottom: 0px;
+    }
+    .vertical-tab .nav-pills {
+        overflow-x: scroll;
+        flex-direction: row !important;
+        flex-wrap: nowrap;
+    }
+    .vertical-tab{
+        display: inline-block !important;
     }
 }
