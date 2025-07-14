@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.bg-primary{
+    background-color: #000066 !important;
+}
+.bg-yellow{
+    background-color: #fdedab3d !important;
+}
+.btn-style{
+    background-image: linear-gradient(90deg,#ec9705,rgb(253, 195, 20));
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.btn-style:hover{
+    background-image: linear-gradient(90deg,rgb(253, 195, 20),#ec9705);
+    color: #000;
+}
+.navbar-light{
+    background: rgba(255, 255, 255, 0.6);
+    margin: 10px;
+    border-radius: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 0;
+
+}
+#background-video {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+ }
+ .section1{
+    top: 0;
+    height: 600px;
+    overflow: hidden;
+ }
+ .bg-opacity{
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    height: 600px;
+    overflow: hidden;
+ }
+.hero-title{
+    color: #ec9705;
+    font-size: 50px;
+    font-weight: 600;
+}
+.hero-title-1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.hero-para{
+    font-size: 20px;
+    color: #fff;
+}
+.hero-para-1{
+    font-size: 20px;
+    color: #fff;
+}
+.section-bg{
+    background-image: linear-gradient(90deg, #000066,#0b0b93);
+    color: #fff;
+    padding: 30px 0px;
+}
+.section-bg h2{
+    color: #fff;
+    text-align: center;
+}
+.card-dark{
+    background-color: #010144;
+}
+.icon{
+    list-style: none;
+    font-size: 18px;
+}
+.icon i{
+    color: #fff;
+    background-color: #ec9705;
+    padding: 7px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: inherit !important;
+}
+.icon p{
+    font-size: 15px;
+}
+.card{
+    border: none;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-img{
+    height: 160px;
+    margin-top: 20px;
+}
+.card-img-testi img{
+    width: 120px;
+    height: 120px;
+}
+.card-img-testi .card-title{
+    padding: 20px;
+    padding-bottom: 0px;
+}
+.accordion-item{
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    color: #000;
+}
+.accordion-button{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    
+}
+.accordion-button:not(.collapsed){
+    background-color: #000066;
+    color: #fff;
+}
+
+.footer{
+    background-color: #040479;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.single_footer h4 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    border: px solid white;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, .15);
+}
+.single_footer ul li {
+    list-style: none;
+}
+.single_footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    line-height: 36px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.single_footer a {
+    color: #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    line-height: 36px;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.social_profile ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.social_profile ul li {
+    list-style: none;
+}
+.social_profile ul li a {
+    text-align: center;
+    border: 0px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    margin: 0px 5px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.copyright {
+    margin-top: 20px;
+    padding-top: 20px;
+    color: #fff;
+    font-size: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+/* Certificate */
+.certificate-section .container{
+    text-align: -webkit-center;
+}
+.certificate-section .card{
+    padding: 20px;
+    margin-bottom: 20px !important;
+    width: 50%;
+}
+.certificate-section .accordion-header button{
+    color: #1040AB !important;
+}
+.certificate-section p{
+    text-align: left;
+}
+.certificate-section .error-content h1{
+   color: #B90909;
+   padding-bottom: 0px;
+}
+.certificate-section table td {
+    padding-right: 20px;
+}
+.section-bg img{
+    width: 60%;
+}
+.owl-carousel .owl-item img {
+    width: 120px !important;
+}
+.owl-carousel .owl-nav{
+    display: none;
+}
+.owl-carousel .owl-dots{
+    text-align: center !important;
+}
+.bg-light .owl-carousel button.owl-dot{
+    margin: 5px;
+    border-radius: 50%;
+    padding: 5px !important;
+    background: #cbc8c4 !important;
+}
+
+@media screen and (max-width: 480px){
+    .hero-title{
+        font-size: 28px;
+    }
+    .hero-title-1{
+        font-size: 25px;
+    }
+    .hero-para{
+        font-size: 22px;
+    }
+    .hero-para-1{
+        font-size: 22px;
+    }
+    .hero-img{
+        height: 300px;
+    }
+    .certificate-section .card{
+        width: auto;
+    }
+    .single_footer_address p{
+        padding: 0px 25px;
+    }
+}
+@media (min-width: 500px) and (max-width: 820px){
+    .hero-title{
+        font-size: 25px;
+    }
+    .hero-title-1{
+        font-size: 23px;
+    }
+    .hero-para{
+        font-size: 20px;
+    }
+    .hero-para-1{
+        font-size: 20px;
+    }
+    .hero-img{
+        padding-top: 30px;
+        height: 300px;
+    }
+    ul{
+        padding-left: 0px;
+    }
+    ul .icon {
+        font-size: 15px;
+    }
+    ul .icon i {
+        padding: 13px;
+        width: 40px;
+        height: 40px;
+        padding-top: 9px;
+    }
+    .card-img{
+        height: auto;
+    }
+    .certificate-section .card{
+        width: auto;
+    }
+    .card {
+        margin: auto;
+    }
+    .card-img-testi img {
+        width: 80px;
+        height: fit-content;
+    }
+    .card-img-testi .card-title {
+        padding: 10px;
+    }
+    .card-title{
+        margin-bottom: 0px;
+    }
+    .card-img-testi .card-title h4{
+        font-size: 18px;
+    }
+    .card .card-content p{
+        font-size: 13px;
+    }
+    .single_footer_address p{
+        padding: 0px 25px;
+    }
+}
