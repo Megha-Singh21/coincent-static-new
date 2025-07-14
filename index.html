@@ -19,6 +19,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        .filterDiv {
+  display: none;
+}
+.filter.active-3{
+    background-color: #0D5EF4;
+    color: #fff;
+    border: #0D5EF4;
+}
+.show {
+  display: block;
+}
+        </style>
 </head>
 
 <body>
@@ -41,7 +54,7 @@
                                     Domains
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="ai.html">Artificial Intelligence</a></li>
+                                    <li><a class="dropdown-item" href="#">Artificial Intelligence</a></li>
                                     <li><a class="dropdown-item" href="#">Web Development</a></li>
                                     <li><a class="dropdown-item" href="#">Data Science</a></li>
                                     <li><a class="dropdown-item" href="#">Machine Learning</a></li>
@@ -93,7 +106,7 @@
                                 <h5 class="text-light ls-1">Kickstart your career with Coincent’s 3-Year
                                     Program—real-world
                                     training, live projects, and placement support in your final year.</h5>
-                                <a href="#" class="btn btn-primary">Get Started <i
+                                <a href="#price" class="btn btn-primary">Get Started <i
                                         class="fa-solid fa-arrow-right-long"></i></a>
                                 <a href="#" class="btn btn-light"><i class="fa-solid fa-download"></i> Brochure</a>
                             </div>
@@ -190,14 +203,18 @@
                 <div class="col-md-4">
                     <h6 class="text-blue ls-1 text-uppercase"><i class="fa-solid fa-book"></i> Domains</h6>
                     <h2 class="head-2 ls-1">Explore Popular Domians</h2>
-                    <div class="pt-3">
-                        <a href="#" class="btn btn-primary ls-1">View All Domains<i
-                                class="fa-solid fa-arrow-right-long"></i></a>
+                    <div class="pt-3" id="gridFilter">
+                        <div class="btn btn-secondary ls-1 mb-2 filter active-3" onclick="filterSelection('ai')">AI & ML</div>
+                        <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('sd')">Software & Tech</div>
+                        <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('ds')">Data Science</div>
+                        <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('cs')">Cyber Security</div>
+                        <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('iot')">IoT, VLSI, HEV</div>
+                        <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('bs')">Business</div>
                     </div>
                 </div>
                 <div class="col-md-8 mt-4 px-4">
-                    <div class="domain-section owl-carousel owl-theme">
-                        <div class="item my-2">
+                    <div class="row">
+                        <div class="col-md-4 my-2 filterDiv ai">
                             <div class="card">
                                 <img src="images/ai.jpg" width="100%" class="card-img-top" alt="Web Development">
                                 <div class="card-body">
@@ -210,12 +227,12 @@
                                     <h5 class="card-title">Artificial Intelligence</h5>
                                     <p class="card-text mb-0">Master AI with Coincent’s 3 year Program and get Microsoft
                                         certified.</p>
-                                    <a href="ai.html" class="text-blue">Know More <i
+                                    <a href="https://coincent.ai/prospect/3-year-program" class="text-blue">Know More <i
                                             class="fa-solid fa-arrow-right-long ani-1"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="item my-2">
+                        <div class="col-md-4 my-2 filterDiv sd">
                             <div class="card">
                                 <img src="images/wd.jpg" class="card-img-top" alt="Web Development">
                                 <div class="card-body">
@@ -228,12 +245,12 @@
                                     <h5 class="card-title">Web Development</h5>
                                     <p class="card-text mb-0">Master Full Stack with Coincent’s 3 year Program using
                                         popular frameworks.</p>
-                                    <a href="#" class="text-blue">Know More <i
+                                    <a href="https://coincent.ai/prospect/3-year-program" class="text-blue">Know More <i
                                             class="fa-solid fa-arrow-right-long ani-1"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="item my-2">
+                        <div class="col-md-4 my-2 filterDiv ds">
                             <div class="card">
                                 <img src="images/ds.png" class="card-img-top" alt="Web Development">
                                 <div class="card-body">
@@ -246,12 +263,12 @@
                                     <h5 class="card-title">Data Science</h5>
                                     <p class="card-text mb-0">Master Data Science with Coincent’s 3 year Program and get
                                         Microsoft certified.</p>
-                                    <a href="#" class="text-blue">Know More <i
+                                    <a href="https://coincent.ai/prospect/3-year-program" class="text-blue">Know More <i
                                             class="fa-solid fa-arrow-right-long ani-1"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="item my-2">
+                        <div class="col-md-4 my-2 filterDiv ai">
                             <div class="card">
                                 <img src="images/ml.jpeg" class="card-img-top" alt="Web Development">
                                 <div class="card-body">
@@ -264,12 +281,12 @@
                                     <h5 class="card-title">Machine Learning</h5>
                                     <p class="card-text mb-0">Master ML with Coincent’s 3-Year Program and get Microsoft
                                         certified.</p>
-                                    <a href="#" class="text-blue">Know More <i
+                                    <a href="https://coincent.ai/prospect/3-year-program" class="text-blue">Know More <i
                                             class="fa-solid fa-arrow-right-long ani-1"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="item my-2">
+                        <div class="col-md-4 my-2 filterDiv cs">
                             <div class="card">
                                 <img src="images/cs.jpg" class="card-img-top" alt="Web Development">
                                 <div class="card-body">
@@ -282,19 +299,132 @@
                                     <h5 class="card-title">Cyber Security</h5>
                                     <p class="card-text mb-0">Master Cyber Security with Coincent’s 3 year Program and
                                         get Microsoft certified.</p>
-                                    <a href="#" class="text-blue">Know More <i
+                                    <a href="https://coincent.ai/prospect/3-year-program" class="text-blue">Know More <i
+                                            class="fa-solid fa-arrow-right-long ani-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-2 filterDiv sd">
+                            <div class="card">
+                                <img src="images/cs.jpg" class="card-img-top" alt="Web Development">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div><i class="fa-solid fa-users text-blue"></i> 8/100 Seats</div>
+                                        <div>|</div>
+                                        <a href=""><i class="fa-solid fa-download text-blue"></i> Curriculum</a>
+                                    </div>
+                                    <hr>
+                                    <h5 class="card-title">Java</h5>
+                                    <p class="card-text mb-0">Master Java with Coincent’s 3-Year Program.</p>
+                                    <a href="https://coincent.ai/prospect/3-year-program" class="text-blue">Know More <i
+                                            class="fa-solid fa-arrow-right-long ani-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-2 filterDiv sd">
+                            <div class="card">
+                                <img src="images/cs.jpg" class="card-img-top" alt="Web Development">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div><i class="fa-solid fa-users text-blue"></i> 3/100 Seats</div>
+                                        <div>|</div>
+                                        <a href=""><i class="fa-solid fa-download text-blue"></i> Curriculum</a>
+                                    </div>
+                                    <hr>
+                                    <h5 class="card-title">Android Development</h5>
+                                    <p class="card-text mb-0">Master Android Development with Coincent’s 3 year Program.</p>
+                                    <a href="https://coincent.ai/prospect/3-year-program" class="text-blue">Know More <i
+                                            class="fa-solid fa-arrow-right-long ani-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-2 filterDiv sd">
+                            <div class="card">
+                                <img src="images/cs.jpg" class="card-img-top" alt="Web Development">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div><i class="fa-solid fa-users text-blue"></i> 6/100 Seats</div>
+                                        <div>|</div>
+                                        <a href=""><i class="fa-solid fa-download text-blue"></i> Curriculum</a>
+                                    </div>
+                                    <hr>
+                                    <h5 class="card-title">Cloud Computing</h5>
+                                    <p class="card-text mb-0">Master Cloud with Coincent’s 3-Year Program.</p>
+                                    <a href="https://coincent.ai/prospect/3-year-program" class="text-blue">Know More <i
+                                            class="fa-solid fa-arrow-right-long ani-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-2 filterDiv iot">
+                            <div class="card">
+                                <img src="images/cs.jpg" class="card-img-top" alt="Web Development">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div><i class="fa-solid fa-users text-blue"></i> 9/100 Seats</div>
+                                        <div>|</div>
+                                        <a href=""><i class="fa-solid fa-download text-blue"></i> Curriculum</a>
+                                    </div>
+                                    <hr>
+                                    <h5 class="card-title">Internet of Things</h5>
+                                    <p class="card-text mb-0">Master IoT with Coincent’s 3 year Program.</p>
+                                    <a href="https://coincent.ai/prospect/3-year-program" class="text-blue">Know More <i
+                                            class="fa-solid fa-arrow-right-long ani-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-2 filterDiv iot">
+                            <div class="card">
+                                <img src="images/cs.jpg" class="card-img-top" alt="Web Development">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div><i class="fa-solid fa-users text-blue"></i> 11/100 Seats</div>
+                                        <div>|</div>
+                                        <a href=""><i class="fa-solid fa-download text-blue"></i> Curriculum</a>
+                                    </div>
+                                    <hr>
+                                    <h5 class="card-title">VLSI</h5>
+                                    <p class="card-text mb-0">Master VLSI with Coincent’s 3-Year Program.</p>
+                                    <a href="https://coincent.ai/prospect/3-year-program" class="text-blue">Know More <i
+                                            class="fa-solid fa-arrow-right-long ani-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-2 filterDiv iot">
+                            <div class="card">
+                                <img src="images/cs.jpg" class="card-img-top" alt="Web Development">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div><i class="fa-solid fa-users text-blue"></i> 4/100 Seats</div>
+                                        <div>|</div>
+                                        <a href=""><i class="fa-solid fa-download text-blue"></i> Curriculum</a>
+                                    </div>
+                                    <hr>
+                                    <h5 class="card-title">Hybrid EV</h5>
+                                    <p class="card-text mb-0">Master HEV with Coincent’s 3-Year Program.</p>
+                                    <a href="https://coincent.ai/prospect/3-year-program" class="text-blue">Know More <i
+                                            class="fa-solid fa-arrow-right-long ani-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-2 filterDiv bs">
+                            <div class="card">
+                                <img src="images/cs.jpg" class="card-img-top" alt="Web Development">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div><i class="fa-solid fa-users text-blue"></i> 5/100 Seats</div>
+                                        <div>|</div>
+                                        <a href=""><i class="fa-solid fa-download text-blue"></i> Curriculum</a>
+                                    </div>
+                                    <hr>
+                                    <h5 class="card-title">Start-up & Business</h5>
+                                    <p class="card-text mb-0">Launch your Startup/Business with Coincent’s 3-Year Program.</p>
+                                    <a href="https://coincent.ai/prospect/3-year-program" class="text-blue">Know More <i
                                             class="fa-solid fa-arrow-right-long ani-1"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="hero-shape shape-9 d-none d-lg-flex">
-                <img src="images/team-shape_1_1.webp" alt="">
-            </div>
-            <div class="hero-shape shape-10 d-none d-lg-flex">
-                <img src="images/shape_1_3.webp" alt="">
             </div>
         </div>
     </div>
@@ -890,6 +1020,642 @@
         </div>
     </div>
 
+    <div class="container pb-5 pt-5" id="price">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="head-2 ls-1 text-center"><span class="text-blue">Coincent 3 Year Program Price Details</span>
+                </h2>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h4 class="text-blue text-center">Standard Plan</h4>
+                        <div class="price">Rs. 3499/- (per Domain)</div>
+                        <p class="text-blue"><b>Includes:</b></p>
+                        <ul>
+                            <li>📅 <b>Program Duration: 3 Years</b>
+                                <ul>
+                                    <li>Year 1: 2.5 Months of Live Industrial Training</li>
+                                    <li>Year 2: 3 Months of Project-Driven Learning & Real-World Application</li>
+                                    <li>Year 3: 3 Months of Guaranteed Internship and Placement Support</li>
+                                </ul>
+                            </li>
+                            <li>📚 30+ Hours of Content</li>
+                            <li>💡 8 Live Projects (with mentor guidance)</li>
+                            <li>🔓 Lifetime Dashboard Access</li>
+                            <li>📄 Project Completion Certificate</li>
+                            <li>🎓 Internship Completion Certificate</li>
+                            <li>🪪 Microsoft Certificate</li>
+                            <li>🧰 Customized Resume Builder & Placement Assistance</li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="https://rzp.io/rzp/7lCSWXF" target="_blank" class="btn btn-primary">Enroll Now</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h4 class="text-blue text-center">Student Choice</h4>
+                        <div class="price">Rs. 5499/- (Combo Domain)</div>
+                        <p class="text-blue"><b>Includes:</b></p>
+                        <ul>
+                            <li>📅 <b>Program Duration: 3 Years</b></li>
+                            <ul>
+                                <li>Year 1: 2.5 Months of Live Industrial Training</li>
+                                <li>Year 2: 3 Months of Project-Driven Learning & Real-World Application</li>
+                                <li>Year 3: 3 Months of Guaranteed Internship & Placement Support</li>
+                            </ul>
+
+                            <li>🎁 Bonus: Free Domain in Startup & Entrepreneurship</li>
+                            <li>📚 70+ Hours of Content</li>
+                            <li>💡 16+ Live Projects (with mentor guidance)</li>
+                            <li>🔓 Lifetime Dashboard Access</li>
+                            <li>📄 Project Completion Certificate</li>
+                            <li>🎓 Internship Completion Certificate</li>
+                            <li>🪪 Microsoft Certificate</li>
+                            <li>🧰 Customized Resume Builder & Placement Assistance</li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="https://rzp.io/rzp/uf0Tzb29" target="_blank" class="btn btn-primary">Enroll Now</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <div class="section-7">
+        <div class="container pb-5 pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="head-2 ls-1 text-center"><span class="text-blue">Frequently Asked Questions</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    1. What is the Coincent 3-Year Program?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    The Coincent 3-Year Program is a structured, long-term learning track designed for
+                                    students from first year to final year of engineering or related degrees. It focuses
+                                    on
+                                    gradually building expertise across key domains through hands-on learning, career
+                                    preparation, and mentorship.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    2. Who is eligible to join the 3-Year Program of Coincent?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Undergraduate students in the first year of B.Tech/B.E, BCA, or B.Sc. streams are
+                                    eligible to join, provided they have scored above 50% in their 12th standard.
+                                    This program is ideal for students who aim to develop strong technical skills and
+                                    become
+                                    industry-ready by the time they graduate.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    3. What does the Coincent 3-Year Program include?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Structured learning from foundation to advanced levels in your chosen domain
+                                            (AI, ML, Web Development, VLSI, IoT, Embedded Systems, etc.)</li>
+                                        <li>
+                                            Year-wise curriculum with clear progression tracking —
+                                            <a href="#" class="brochure-link">Download Brochure</a>
+                                        </li>
+                                        <li>Hands-on industry projects, internships, and exposure to real-world research
+                                        </li>
+                                        <li>Mentorship from experienced industry professionals</li>
+                                        <li>Comprehensive career support, including resume building, mock interviews,
+                                            and
+                                            referral opportunities</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    4. What certificates are offered in the Coincent 3-Year Program?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    The Coincent 3-Year Program offers multiple valuable certifications to enhance your
+                                    career profile:
+                                    <ul>
+                                        <li>
+                                            <strong>Participation & Industrial Training Certificate:</strong> Awarded by
+                                            partnered companies upon successful completion of the 1st-year industrial
+                                            training.
+                                        </li>
+                                        <li>
+                                            <strong>Microsoft Certification:</strong> Available for candidates who
+                                            choose
+                                            domains like Artificial Intelligence, Machine Learning, Data Science, or
+                                            Cyber
+                                            Security, upon clearing the relevant Microsoft exam.
+                                        </li>
+                                        <li>
+                                            <strong>Internship Completion Certificate:</strong> Provided by partnered
+                                            companies to students who successfully complete their internship in the 3rd
+                                            year.
+                                        </li>
+                                        <li>
+                                            <strong>Letter of Recommendation (LOR):</strong> Issued in the final year to
+                                            students who have successfully completed both the internship and the
+                                            placement
+                                            preparation phase.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    5. Does Coincent charge any additional fees for the Microsoft certification exams
+                                    apart from the Rs.3,500 for the 3-Year Program?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>No, there are no additional charges. The total fee for enrolling in the Coincent
+                                        3-Year Program is Rs.3,500, and this includes access to Microsoft certification
+                                        training and exams, as well as all other program benefits.</p>
+                                    <p>Coincent is able to offer this program at such an affordable cost because 50% of
+                                        the program expenses are sponsored by partnered companies. These companies not
+                                        only support the training but also consider hiring top-performing candidates
+                                        directly in the final year.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    6. What will we learn in the 1st year of Coincent's 3-year program?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    In the first year, candidates will undergo live industrial training in selected
+                                    domain. The purpose of this training is to provide real-time theoretical exposure
+                                    and practical insights into the domain. The training will span approximately 2.5
+                                    months, with live sessions conducted two to three times a week by experienced
+                                    industry experts.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    7. What will we learn in the 2nd year of Coincent's 3-year program?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    In the second year, candidates will work on live projects under the guidance of
+                                    industry experts. They will complete a total of 8 projects, providing them with
+                                    valuable real-time exposure. The duration of this phase will be 2.5 months.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    8. What will we learn in the 3rd year of Coincent's 3-year program?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>In the third year, candidates will participate in an internship designed to
+                                        provide hands-on industry experience. During this period, they will work
+                                        directly on company projects within their chosen domain. Following the
+                                        internship, a comprehensive placement preparation phase will be conducted,
+                                        covering aptitude, soft skills, and domain-specific interview training.</p>
+                                    <p>Please note that the internship will be offered only upon successful completion
+                                        of the live projects conducted in the second year.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    9. Do I receive a certificate upon completion of the program from Coincent?
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Yes, students receive year-wise, domain-specific program certifications. The
+                                        certificate includes industrial training completion, internship & participation,
+                                        and is endorsed by our industry partners.</p>
+                                    <p>Additionally, students who opt for domains such as AI, ML, Data Science, or
+                                        Cybersecurity will receive a Microsoft certification as part of the program.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="accordion" id="accordionExample2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    10. Is the Coincent 3-Year Program flexible with academic schedules?
+                                </button>
+                            </h2>
+                            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p>Yes, the Coincent 3-Year Program is designed to complement regular college
+                                        academics. All learning modules are delivered through flexible evening live
+                                        sessions led by industry mentors and experts.</p>
+                                    <p>Sessions are typically scheduled at 6:00 PM, making it convenient for students to
+                                        balance both college and skill development.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEleven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEleven" aria-expanded="false"
+                                    aria-controls="collapseEleven">
+                                    11. How do I apply for the Coincent 3-Year Program?
+                                </button>
+                            </h2>
+                            <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    You can apply through the Coincent official website(Coincent.ai) or or you can
+                                    directly register by clicking on the below Link
+                                    <a href="#price">Apply Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwelve">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwelve" aria-expanded="false"
+                                    aria-controls="collapseTwelve">
+                                    12. Is placement assistance included in the Coincent 3-Year Program?
+                                </button>
+                            </h2>
+                            <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    Absolutely. In the final year, candidates receive comprehensive placement support,
+                                    which includes aptitude training, resume building, technical mock interviews,
+                                    portfolio development, and Interview rounds with hiring partners.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThirteen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThirteen" aria-expanded="false"
+                                    aria-controls="collapseThirteen">
+                                    13. Can I switch domains after registration?
+                                </button>
+                            </h2>
+                            <div id="collapseThirteen" class="accordion-collapse collapse"
+                                aria-labelledby="headingThirteen" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    Yes, candidates can change their selected domain within 24 hours of registration.
+                                    However, we highly encourage you to register only after you’re fully confident about
+                                    the domain you want to pursue and build real-time industry exposure.
+                                    <p>Once registered, your seat is immediately reserved with one of our partnered
+                                        companies. These industry partners offer only 150 domain-specific seats, and
+                                        since we run just one batch per year, seat allocation is both limited and
+                                        competitive.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFourteen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFourteen" aria-expanded="false"
+                                    aria-controls="collapseFourteen">
+                                    14. Can I join the Coincent Program in the 2nd or 3rd year?
+                                </button>
+                            </h2>
+                            <div id="collapseFourteen" class="accordion-collapse collapse"
+                                aria-labelledby="headingFourteen" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    No, the Coincent Program is offered exclusively to first-year students and freshers.
+                                    We run only one batch per year to ensure that each candidate receives structured
+                                    guidance, real-time industry exposure, and the full benefits of the complete 3-year
+                                    journey.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFifteen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFifteen" aria-expanded="false"
+                                    aria-controls="collapseFifteen">
+                                    15. Do I get to work on real industry projects during the Coincent 3-Year Program?
+                                </button>
+                            </h2>
+                            <div id="collapseFifteen" class="accordion-collapse collapse"
+                                aria-labelledby="headingFifteen" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    Yes! In the second year—your Live Project Phase—you’ll work on 7 to 9 real-world
+                                    projects based on your selected domain, all under the guidance of experienced
+                                    industry experts. This hands-on experience is designed to strengthen your practical
+                                    skills, and you'll receive continuous feedback from mentors to support your
+                                    improvement and growth throughout the process.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSixteen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSixteen" aria-expanded="false"
+                                    aria-controls="collapseSixteen">
+                                    16. Will I receive mentorship from industry professionals in the Coincent Program?
+                                </button>
+                            </h2>
+                            <div id="collapseSixteen" class="accordion-collapse collapse"
+                                aria-labelledby="headingSixteen" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    Yes! Coincent provides direct mentorship from experienced professionals working at
+                                    top companies like Microsoft, Google, Intel, and others. These mentors lead regular
+                                    live sessions, offer project reviews, and provide personalized career guidance
+                                    throughout the program.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeventeen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeventeen" aria-expanded="false"
+                                    aria-controls="collapseSeventeen">
+                                    17. What happens if I miss a live session?
+                                </button>
+                            </h2>
+                            <div id="collapseSeventeen" class="accordion-collapse collapse"
+                                aria-labelledby="headingSeventeen" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    All live sessions at Coincent are recorded and uploaded to your Learning Management
+                                    System (LMS). You can watch them at your convenience and easily catch up before the
+                                    next assignment or session.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEighteen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEighteen" aria-expanded="false"
+                                    aria-controls="collapseEighteen">
+                                    18. How is my progress tracked throughout the 3 years?
+                                </button>
+                            </h2>
+                            <div id="collapseEighteen" class="accordion-collapse collapse"
+                                aria-labelledby="headingEighteen" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    Each student is provided with a personal learning dashboard to monitor their
+                                    progress. In the first year, after completing the industrial training, an assessment
+                                    will be conducted and evaluated by industry mentors. In the second year, each
+                                    project will be graded to measure ongoing performance. Only candidates who
+                                    successfully complete all assigned projects will qualify for the internship in the
+                                    third year.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="accordion" id="accordionExample3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNineteen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNineteen" aria-expanded="false"
+                                    aria-controls="collapseNineteen">
+                                    19. Is the Coincent 3-Year Program recognized by companies for hiring?
+                                </button>
+                            </h2>
+                            <div id="collapseNineteen" class="accordion-collapse collapse"
+                                aria-labelledby="headingNineteen" data-bs-parent="#accordionExample3">
+                                <div class="accordion-body">
+                                    Yes! Coincent certificates are issued by our partnered industry companies, making
+                                    them widely recognized and valued by employers worldwide. Additionally, candidates
+                                    who choose domains like Artificial Intelligence, Machine Learning, Data Science, or
+                                    Cyber Security will also receive a certificate from Microsoft upon successfully
+                                    clearing the relevant exam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwenty">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwenty" aria-expanded="false"
+                                    aria-controls="collapseTwenty">
+                                    20. Is mentorship available in the Coincent 3-Year Program?
+                                </button>
+                            </h2>
+                            <div id="collapseTwenty" class="accordion-collapse collapse" aria-labelledby="headingTwenty"
+                                data-bs-parent="#accordionExample3">
+                                <div class="accordion-body">
+                                    Yes, mentorship is a core part of the Coincent 3-Year Program and is provided
+                                    throughout all three phases.
+                                    <ul>
+                                        <li>In the 1st year, students receive mentorship through live industrial
+                                            training sessions.</li>
+                                        <li>In the 2nd year, mentorship continues with guidance during live project
+                                            work.</li>
+                                        <li>In the 3rd year, students benefit from internship mentorship along with
+                                            dedicated placement support.</li>
+                                    </ul>
+                                    <p>This continuous mentorship ensures personalized guidance and growth at every
+                                        stage of the program.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwentyOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwentyOne" aria-expanded="false"
+                                    aria-controls="collapseTwentyOne">
+                                    21. When will I receive the Microsoft certification in the Coincent 3-Year Program?
+                                </button>
+                            </h2>
+                            <div id="collapseTwentyOne" class="accordion-collapse collapse"
+                                aria-labelledby="headingTwentyOne" data-bs-parent="#accordionExample3">
+                                <div class="accordion-body">
+                                    Candidates are eligible to appear for the Microsoft certification exam after
+                                    completing the 1st-year Industrial Training and before beginning the 2nd-year Live
+                                    Project Phase.
+                                    <p>This certification is available only for specific domains:</p>
+                                    <ul>
+                                        <li>Artificial Intelligence</li>
+                                        <li>Machine Learning</li>
+                                        <li>Cyber Security</li>
+                                        <li>Data Science</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwentyTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwentyTwo" aria-expanded="false"
+                                    aria-controls="collapseTwentyTwo">
+                                    22. Does Coincent provide official Microsoft certification exams?
+                                </button>
+                            </h2>
+                            <div id="collapseTwentyTwo" class="accordion-collapse collapse"
+                                aria-labelledby="headingTwentyTwo" data-bs-parent="#accordionExample3">
+                                <div class="accordion-body">
+                                    Yes, the Coincent 3-Year Program includes dedicated training to help you prepare for
+                                    Microsoft certification exams. Once you successfully clear the exam, you will
+                                    receive an official certificate directly from Microsoft.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwentyThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwentyThree" aria-expanded="false"
+                                    aria-controls="collapseTwentyThree">
+                                    23. Is the Coincent 3-Year Program suitable for non-tech students?
+                                </button>
+                            </h2>
+                            <div id="collapseTwentyThree" class="accordion-collapse collapse"
+                                aria-labelledby="headingTwentyThree" data-bs-parent="#accordionExample3">
+                                <div class="accordion-body">
+                                    Yes, absolutely! The program is specifically designed for freshers, including those
+                                    from non-technical backgrounds. The curriculum starts from the basics, making it
+                                    easy to follow and build skills step by step. Additionally, Coincent offers only
+                                    high-demand domains that are supported and delivered by our partnered companies,
+                                    ensuring both quality and relevance in today’s job market.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwentyFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwentyFour" aria-expanded="false"
+                                    aria-controls="collapseTwentyFour">
+                                    24. How long do we have access to the dashboard
+                                </button>
+                            </h2>
+                            <div id="collapseTwentyFour" class="accordion-collapse collapse"
+                                aria-labelledby="headingTwentyFour" data-bs-parent="#accordionExample3">
+                                <div class="accordion-body">
+                                    You will have lifetime access to the dashboard. All live session recordings will
+                                    also be available in the LMS section of the dashboard for you to revisit anytime.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwentyFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwentyFive" aria-expanded="false"
+                                    aria-controls="collapseTwentyFive">
+                                    25. What is the refund policy for the Coincent 3-Year Program?
+                                </button>
+                            </h2>
+                            <div id="collapseTwentyFive" class="accordion-collapse collapse"
+                                aria-labelledby="headingTwentyFive" data-bs-parent="#accordionExample3">
+                                <div class="accordion-body">
+                                    The Coincent 3-Year Program has a no-refund policy. Once you register, your seat is
+                                    reserved with one of our partnered companies, and we do not offer refunds under any
+                                    circumstances.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwentySix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwentySix" aria-expanded="false"
+                                    aria-controls="collapseTwentySix">
+                                    26. Can I interact with instructors during the Coincent 3-Year Program?
+                                </button>
+                            </h2>
+                            <div id="collapseTwentySix" class="accordion-collapse collapse"
+                                aria-labelledby="headingTwentySix" data-bs-parent="#accordionExample3">
+                                <div class="accordion-body">
+                                    Yes, absolutely! Interaction with instructors is highly encouraged. Since Coincent
+                                    conducts only one batch per year with a limited intake of 150 candidates per domain,
+                                    industry experts are able to engage directly with students during live
+                                    sessions—ensuring a more personalized and interactive learning experience.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwentySeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwentySeven" aria-expanded="false"
+                                    aria-controls="collapseTwentySeven">
+                                    27. Can I get a refund after registering for the Coincent 3-Year Program?
+                                </button>
+                            </h2>
+                            <div id="collapseTwentySeven" class="accordion-collapse collapse"
+                                aria-labelledby="headingTwentySeven" data-bs-parent="#accordionExample3">
+                                <div class="accordion-body">
+                                    <p>Coincent offers a full refund only if our partnered companies fail to deliver the
+                                        promised services on time.</p>
+                                    <p>However, we strongly advise candidates to register only if they are fully clear
+                                        about the program and aligned with its goals. Since there is only one batch per
+                                        year per domain, your seat is instantly confirmed with the respective partnered
+                                        company upon registration.</p>
+                                    <p>Therefore, the program is non-transferable and non-refundable under normal
+                                        circumstances.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="container pb-5 pt-5">
             <div class="row">
@@ -1041,6 +1807,54 @@
                 var current = document.getElementsByClassName("active-2");
                 current[0].className = current[0].className.replace(" active-2", " ");
                 this.className += " active-2";
+            });
+        }
+    </script>
+
+    <script>
+        filterSelection("ai")
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == " ") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("gridFilter");
+        var btns = btnContainer.getElementsByClassName("filter");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active-3");
+                current[0].className = current[0].className.replace(" active-3", "");
+                this.className += " active-3";
             });
         }
     </script>
