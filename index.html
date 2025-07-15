@@ -19,19 +19,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <style>
+    <style>
         .filterDiv {
-  display: none;
-}
-.filter.active-3{
-    background-color: #0D5EF4;
-    color: #fff;
-    border: #0D5EF4;
-}
-.show {
-  display: block;
-}
-        </style>
+            display: none;
+        }
+
+        .filter.active-3 {
+            background-color: #213D6C;
+            color: #fff;
+            border: #213D6C;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .filters {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .filters button {
+            margin: 5px 0;
+            padding: 10px;
+            background: linear-gradient(to right, #003366, #1d51bf);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .certifications .card {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 
 <body>
@@ -45,7 +69,7 @@
                 <a class="navbar-brand" href="index.html">
                     <img src="images/coincent-logo-blue.png" width="150" alt="">
                 </a>
-                <div class="navbar-nav">
+                <!-- <div class="navbar-nav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <div class="dropdown">
@@ -70,7 +94,7 @@
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -81,13 +105,15 @@
                             <a class="nav-link" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="coincent-partnership/index.html" target="_blank">Partnership Program</a>
+                            <a class="nav-link" href="coincent-partnership/index.html" target="_blank">Partnership
+                                Program</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-primary text-white" href="https://coincent.ai/student-login" target="_blank">Log In</a>
+                            <a class="nav-link btn btn-primary text-white" href="https://coincent.ai/student-login"
+                                target="_blank">Log In</a>
                         </li>
                     </ul>
                 </div>
@@ -101,11 +127,14 @@
                     <div class="row">
                         <div class="col-md-6 d-flex align-items-center justify-content-center">
                             <div>
-                                <h1>Empowering Graduates with <span class="text-blue">Industry-Focused Learning</span>
+                                <h1>Coincent <span class="text-yellow">3-Year</span> Career Acceleration Program
                                 </h1>
-                                <h5 class="text-light ls-1">Kickstart your career with Coincent’s 3-Year
-                                    Program—real-world
-                                    training, live projects, and placement support in your final year.</h5>
+                                <h4 class="text-light">Empowering Graduates with <span
+                                        class="text-yellow">Industry-Focused</span> Learning
+                                </h4>
+                                <h6 class="text-light ls-1 mb-3">Kickstart your career with Coincent’s 3-Year
+                                    Program—real-world training, live projects, and placement support in your final
+                                    year. Learn, build, launch your career with our programs.</h6>
                                 <a href="#price" class="btn btn-primary">Get Started <i
                                         class="fa-solid fa-arrow-right-long"></i></a>
                                 <a href="#" class="btn btn-light"><i class="fa-solid fa-download"></i> Brochure</a>
@@ -113,7 +142,7 @@
                         </div>
                         <div class="col-md-6  d-none d-lg-flex align-items-center justify-content-center">
                             <div class="hero-img mt-5 pb-5">
-                                <img src="images/hero-img.png" width="100%" height="100%" alt="Hero Image"
+                                <img src="images/her-img.jpg" width="100%" height="100%" alt="Hero Image"
                                     class="img-fluid">
                             </div>
                         </div>
@@ -127,7 +156,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h6 class="text-blue"><b>Live Industrial Training</b></h6>
-                                <p class="mb-0 op-7">1st year, 2.5 month, Live session</p>
+                                <p class="mb-0 op-7"><b>1st year:</b> 2.5 month, Live session</p>
                             </div>
                         </div>
                     </a>
@@ -137,7 +166,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h6 class="text-blue"><b>Live Projects</b></h6>
-                                <p class="mb-0 op-7">2nd Year, 3 months, 8 Projects</p>
+                                <p class="mb-0 op-7"><b>2nd Year:</b> 3 months, 8 Projects</p>
                             </div>
                         </div>
                     </a>
@@ -157,7 +186,8 @@
                         <div class="card">
                             <div class="card-body">
                                 <h6 class="text-blue"><b>Placement Preparation</b></h6>
-                                <p class="mb-0 op-7">Mock interviews, Aptitude preparation,<br> Coding practice, Resume
+                                <p class="mb-0 op-7"><b>3rd Year:</b> Mock interviews, Aptitude preparation,<br> Coding
+                                    practice, Resume
                                     optimization</p>
                             </div>
                         </div>
@@ -194,21 +224,26 @@
         </div>
     </div>
 
-    <div class="section-3 pt-5 pb-5">
+    <div class="section-3 pt-3 pb-5" id="section-3">
         <div class="container">
-            <div class="shape-mockup d-none d-lg-block">
+            <div class="shape-mockup d-none d-lg-block mt-3">
                 <img src="images/category-arrow.svg" alt="">
             </div>
             <div class="row">
                 <div class="col-md-4">
                     <h6 class="text-blue ls-1 text-uppercase"><i class="fa-solid fa-book"></i> Domains</h6>
                     <h2 class="head-2 ls-1">Explore Popular Domians</h2>
-                    <div class="pt-3" id="gridFilter">
-                        <div class="btn btn-secondary ls-1 mb-2 filter active-3" onclick="filterSelection('ai')">AI & ML</div>
-                        <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('sd')">Software & Tech</div>
-                        <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('ds')">Data Science</div>
-                        <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('cs')">Cyber Security</div>
-                        <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('iot')">IoT, VLSI, HEV</div>
+                    <div class="pt-5" id="gridFilter">
+                        <div class="btn btn-secondary ls-1 mb-2 filter active-3" onclick="filterSelection('ai')">AI & ML
+                        </div>
+                        <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('sd')">Software & Tech
+                        </div>
+                        <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('ds')">Data Science
+                        </div>
+                        <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('cs')">Cyber Security
+                        </div>
+                        <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('iot')">IoT, VLSI, HEV
+                        </div>
                         <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('bs')">Business</div>
                     </div>
                 </div>
@@ -332,7 +367,8 @@
                                     </div>
                                     <hr>
                                     <h5 class="card-title">Android Development</h5>
-                                    <p class="card-text mb-0">Master Android Development with Coincent’s 3 year Program.</p>
+                                    <p class="card-text mb-0">Master Android Development with Coincent’s 3 year Program.
+                                    </p>
                                     <a href="https://coincent.ai/prospect/3-year-program" class="text-blue">Know More <i
                                             class="fa-solid fa-arrow-right-long ani-1"></i></a>
                                 </div>
@@ -417,7 +453,8 @@
                                     </div>
                                     <hr>
                                     <h5 class="card-title">Start-up & Business</h5>
-                                    <p class="card-text mb-0">Launch your Startup/Business with Coincent’s 3-Year Program.</p>
+                                    <p class="card-text mb-0">Launch your Startup/Business with Coincent’s 3-Year
+                                        Program.</p>
                                     <a href="https://coincent.ai/prospect/3-year-program" class="text-blue">Know More <i
                                             class="fa-solid fa-arrow-right-long ani-1"></i></a>
                                 </div>
@@ -442,12 +479,9 @@
                             <h5 class="card-title">Year 1: Live Industrial Training – Build Your Foundation</h5>
                             <p class="card-text text-blue"><b>Hands-on Industry Exposure from Day One</b></p>
                             <ul>
-                                <li><b>Live Industrial Training (2.5 Months):</b> Real-time training in a professional
-                                    environment to understand how industries operate.</li>
-                                <li><b>Skill-Based Learning:</b> Focus on the latest technologies and industry tools to
-                                    prepare you for future project work.</li>
-                                <li><b>Mentorship from Industry Experts:</b> Learn directly from professionals who guide
-                                    you through the practical applications of your coursework.</li>
+                                <li><b>Live Industrial Training (2.5 Months)</b></li>
+                                <li><b>Skill-Based Learning</b></li>
+                                <li><b>Mentorship from Industry Experts</b></li>
                             </ul>
                         </div>
                         <div class="hero-shape shape-6 d-none d-lg-block">
@@ -461,12 +495,9 @@
                             <h5 class="card-title">Year 2: Real-Time Projects – Apply What You’ve Learned</h5>
                             <p class="card-text text-blue"><b>Transform Knowledge into Experience</b></p>
                             <ul>
-                                <li><b>8 Real-Time Projects:</b> Collaborate on industry-level projects to gain hands-on
-                                    experience.</li>
-                                <li><b>Portfolio Building:</b> Each project adds value to your resume and professional
-                                    profile.</li>
-                                <li><b>Team Collaboration:</b> Work in teams, simulating a real working environment and
-                                    improving soft skills and project management.</li>
+                                <li><b>8 Real-Time Projects</b></li>
+                                <li><b>Portfolio Building</b></li>
+                                <li><b>Team Collaboration</b></li>
                             </ul>
                         </div>
                         <div class="hero-shape shape-7 d-none d-lg-block">
@@ -480,12 +511,9 @@
                             <h5 class="card-title">Year 3: Internship + Placement Support – Launch Your Career</h5>
                             <p class="card-text text-blue"><b>Step Into the Industry with Confidence</b></p>
                             <ul>
-                                <li><b>Guaranteed Internship:</b> Internship in one of our partnered companies for
-                                    practical.</li>
-                                <li><b>Placement Readiness Training:</b> Resume building, mock interviews, aptitude
-                                    sessions, and soft skill development.</li>
-                                <li><b>Placement Assistance:</b> Dedicated support and connections to help you secure a
-                                    role post-internship.</li>
+                                <li><b>Guaranteed Internship</b></li>
+                                <li><b>Placement Readiness Training</b></li>
+                                <li><b>Placement Assistance</b></li>
                             </ul>
                         </div>
                         <div class="hero-shape shape-7 d-none d-lg-block">
@@ -501,9 +529,9 @@
         <div class="row">
             <div class="col-md-5 d-flex align-items-center justify-content-center">
                 <div>
-                    <h5 class="text-blue">Coincent learners are making their mark across leading
+                    <h5 class="d-view">Coincent learners are making their mark across leading
                         global organizations</h5>
-                    <h2 class="head-2 ls-1">250+ Alumni Placed At</h2>
+                    <h2 class="text-blue head-2 ls-1">250+ Alumni Placed At</h2>
                 </div>
             </div>
             <div class="col-md-7 d-view">
@@ -581,7 +609,7 @@
             <div class="col-md-12 m-view">
                 <marquee behavior="" direction="right">
                     <div class="d-flex">
-                    <div class="d-flex align-items-center justify-content-center mx-3">
+                        <div class="d-flex align-items-center justify-content-center mx-3">
                             <img src="images/accenture.webp" width="100px" alt="">
                         </div>
                         <div class="d-flex align-items-center justify-content-center mx-3">
@@ -611,11 +639,11 @@
                         <div class="d-flex align-items-center justify-content-center mx-3">
                             <img src="images/walmart.webp" width="100px" alt="">
                         </div>
-                        </div>
+                    </div>
                 </marquee>
                 <marquee behavior="" direction="">
                     <div class="d-flex">
-                    <div class="d-flex align-items-center justify-content-center mx-3">
+                        <div class="d-flex align-items-center justify-content-center mx-3">
                             <img src="images/amazon.webp" width="100px" alt="">
                         </div>
                         <div class="d-flex align-items-center justify-content-center mx-3">
@@ -645,7 +673,7 @@
                         <div class="d-flex align-items-center justify-content-centermx-3">
                             <img src="images/ibm.png" width="100px" alt="">
                         </div>
-                        </div>
+                    </div>
                 </marquee>
             </div>
         </div>
@@ -658,16 +686,16 @@
         <div class="row">
             <div class="col-md-6 d-flex align-items-center justify-content-center">
                 <div>
-                    <h6 class="text-blue ls-1 text-uppercase"><i class="fa-solid fa-user"></i> Mentors/Instructors</h6>
+                    <h6 class="text-blue ls-1 text-uppercase"><i class="fa-solid fa-user"></i> Meet Instructors</h6>
                     <h2 class="head-2 ls-1">You are in Safe Hands with our Expert Instructor</h2>
-                    <p>Graduates of IIT/NIT/BIT Universities have achieved remarkable success in their chosen fields, with advanced degrees, secured fulfilling careers, and make valuable contributions to
-                        their
-                        communities.</p>
+                    <p>Behind every successful learner is a great mentor. At Coincent, we’ve brought together a
+                        passionate group of instructors and industry professionals who are not just experts in their
+                        fields — they genuinely care about your growth.</p>
                     <div class="pt-2">
-                        <a href="#" class="btn btn-primary ls-1 mb-3">View All Domains<i
+                        <a href="#section-3" class="btn btn-primary ls-1 mb-3">View All Domains<i
                                 class="fa-solid fa-arrow-right-long"></i></a>
-                        <a href="#" class="btn btn-dark ls-1 mb-3">Check All Mentors<i
-                                class="fa-solid fa-arrow-right-long"></i></a>
+                        <!-- <a href="#" class="btn btn-dark ls-1 mb-3">Check All Mentors<i
+                                class="fa-solid fa-arrow-right-long"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -762,148 +790,48 @@
                 <h2 class="head-2 ls-1">Our Star Students – See What They’ve Achieved!</h2>
                 <p>Explore how Coincent's 3-year program shaped real careers. — all reviews sourced from Google.</p>
             </div>
-            <div class="testi owl-carousel owl-theme mt-3">
-            <div class="item">
-                <div class="testi-box">
-                    <div class="testi-box-bg-shape">
-                        <svg width="150" height="137" viewBox="0 0 150 137" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0 9.99951C0 4.47666 4.47715 -0.000488281 10 -0.000488281H140C145.523 -0.000488281 150 4.47666 150 9.99951V10.5803C150 13.3951 148.814 16.0796 146.732 17.9747L18.8619 134.394C17.0205 136.07 14.6199 137 12.1297 137H10C4.47715 137 0 132.522 0 127V9.99951Z"
-                                fill="#0D5EF4"></path>
-                        </svg></div>
-                    <div class="testi-box_content">
-                        <div class="testi-box_img">
-                            <img decoding="async" src="images/puneeth-sayana.png" alt="testi_1_1"></div>
-                        <div>
-                            <p><b>“Linkedin Internship completed - cybersecurity and ethical hacking”</b></p>
-                            <p>Your dedication and expertise have inspired me to strive for excellence in the field of cyber
-                            security.”
-                            I am thrilled to share that I have successfully completed an internship program in Cyber
-                            Security and Ethical Hacking from August 1, 2024, to September 30, 2024... <a
-                                href="https://www.linkedin.com/posts/puneeth-sayana_cybersecurity-ethicalhacking-internship-activity-7289228048409710592-8LZV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAI7OFABlIq_ZUbEJtNt_AFYL9eBSI3_ncY"
-                                target="_blank" class="text-blue">read more</a></p>
-                        </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="filters">
+                        <button data-filter="all">All Certifications</button>
+                        <button data-filter="microsoft">Microsoft Certificate</button>
+                        <button data-filter="project">Live Project Completion & Training Certificate</button>
+                        <button data-filter="internship">Internship Completion Certificate</button>
+                        <button data-filter="participation">Certificate of Participation</button>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="testi-box">
-                    <div class="testi-box-bg-shape">
-                        <svg width="150" height="137" viewBox="0 0 150 137" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0 9.99951C0 4.47666 4.47715 -0.000488281 10 -0.000488281H140C145.523 -0.000488281 150 4.47666 150 9.99951V10.5803C150 13.3951 148.814 16.0796 146.732 17.9747L18.8619 134.394C17.0205 136.07 14.6199 137 12.1297 137H10C4.47715 137 0 132.522 0 127V9.99951Z"
-                                fill="#0D5EF4"></path>
-                        </svg></div>
-                    <div class="testi-box_content">
-                        <div class="testi-box_img">
-                            <img decoding="async" src="images/pranav-karpe.png" alt="testi_1_1"></div>
-                        <div>
-                            <p><b>“Linkedin - Participation certificate and Training completion certificate”</b></p>
-                            <p>Proud to share that I've earned my Microsoft certification, thanks to the invaluable
-                            industrial training and internship at Coincent! Grateful for the opportunity and the
-                            incredible learning experience. Here's to more growth and achievements!…<a
-                                href="https://www.linkedin.com/posts/pranav-karpe-46b14528b_coincentai-microsoftcertification-learningjourney-activity-7270801493576806400-Ag-R?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAI7OFABlIq_ZUbEJtNt_AFYL9eBSI3_ncY"
-                                target="_blank" class="text-blue">read more</a></p>
+                <div class="col-md-9">
+                    <div class="certifications row">
+                        <div class="col-md-3">
+                        <div class="card microsoft">
+                            <h4>Microsoft Certificate</h4>
+                            <p>PRANATHI HOLLA cleared the Microsoft certification.</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="testi-box">
-                    <div class="testi-box-bg-shape">
-                        <svg width="150" height="137" viewBox="0 0 150 137" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0 9.99951C0 4.47666 4.47715 -0.000488281 10 -0.000488281H140C145.523 -0.000488281 150 4.47666 150 9.99951V10.5803C150 13.3951 148.814 16.0796 146.732 17.9747L18.8619 134.394C17.0205 136.07 14.6199 137 12.1297 137H10C4.47715 137 0 132.522 0 127V9.99951Z"
-                                fill="#0D5EF4"></path>
-                        </svg></div>
-                    <div class="testi-box_content">
-                        <div class="testi-box_img">
-                            <img decoding="async" src="images/virendra-raul.png" alt="testi_1_1"></div>
-                        <div>
-                            <p><b>“Linkedin Internship completed - cybersecurity and ethical hacking”</b></p>
-                            <p>During this experience, I delved into various aspects of cybersecurity, strengthening my
-                            skills and gaining practical insights into the world of ethical hacking. It was a truly
-                            enriching journey, and I am grateful for the opportunity to learn and grow in this field…<a
-                                href="https://www.linkedin.com/posts/virendra-raul-5489a624a_cybersecurity-ethicalhacking-internship-activity-7253430684470415360-6CbZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAI7OFABlIq_ZUbEJtNt_AFYL9eBSI3_ncY"
-                                target="_blank" class="text-blue">read more</a></p>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="testi-box">
-                    <div class="testi-box-bg-shape">
-                        <svg width="150" height="137" viewBox="0 0 150 137" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0 9.99951C0 4.47666 4.47715 -0.000488281 10 -0.000488281H140C145.523 -0.000488281 150 4.47666 150 9.99951V10.5803C150 13.3951 148.814 16.0796 146.732 17.9747L18.8619 134.394C17.0205 136.07 14.6199 137 12.1297 137H10C4.47715 137 0 132.522 0 127V9.99951Z"
-                                fill="#0D5EF4"></path>
-                        </svg></div>
-                    <div class="testi-box_content">
-                        <div class="testi-box_img">
-                            <img decoding="async" src="images/hemant-prajapati.png" alt="testi_1_1"></div>
-                        <div>
-                            <p><b>“Linkedin - training completion and participate certificate”</b></p>
-                            <p>Watch out his testimonial - A huge thank you to the amazing team at Coincent.ai for providing
-                            such a comprehensive and hands-on learning experience! Excited to embark on this journey,
-                            ready to build and innovate in the digital space. Onward and upward!…<a
-                                href="https://www.linkedin.com/posts/hemant-prajapati-328410259_webdev-codingjourney-techlife-activity-7228779321228771328-EKDf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAI7OFABlIq_ZUbEJtNt_AFYL9eBSI3_ncY"
-                                target="_blank" class="text-blue">read more</a></p>
+<div class="col-md-3">
+                        <div class="card internship">
+                            <h4>Internship Certificate</h4>
+                            <p>RUCHITHA NEVAS completed her internship.</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="testi-box">
-                    <div class="testi-box-bg-shape">
-                        <svg width="150" height="137" viewBox="0 0 150 137" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0 9.99951C0 4.47666 4.47715 -0.000488281 10 -0.000488281H140C145.523 -0.000488281 150 4.47666 150 9.99951V10.5803C150 13.3951 148.814 16.0796 146.732 17.9747L18.8619 134.394C17.0205 136.07 14.6199 137 12.1297 137H10C4.47715 137 0 132.522 0 127V9.99951Z"
-                                fill="#0D5EF4"></path>
-                        </svg></div>
-                    <div class="testi-box_content">
-                        <div class="testi-box_img">
-                            <img decoding="async" src="images/shanmuga-prabha.png" alt="testi_1_1"></div>
-                        <div>
-                            <p><b>“Linkedin - Completed the internship”</b></p>
-                            <p>Excited to Share that I have Successfully Completed the Virtual Internship on IOT,Robotics &
-                            Embedded Systems from 1st August 2024 to 30th Sep 2024…<a
-                                href="https://www.linkedin.com/posts/t-shanmuga-prabha-709347270_excited-to-share-that-i-have-successfully-activity-7247635032423444480-k3Ex?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAI7OFABlIq_ZUbEJtNt_AFYL9eBSI3_ncY"
-                                target="_blank" class="text-blue">read more</a></p>
+</div>
+<div class="col-md-3">
+                        <div class="card project">
+                            <h4>Live Project Training</h4>
+                            <p>MEGHANA KALYANI completed Microsoft project training.</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="testi-box">
-                    <div class="testi-box-bg-shape">
-                        <svg width="150" height="137" viewBox="0 0 150 137" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0 9.99951C0 4.47666 4.47715 -0.000488281 10 -0.000488281H140C145.523 -0.000488281 150 4.47666 150 9.99951V10.5803C150 13.3951 148.814 16.0796 146.732 17.9747L18.8619 134.394C17.0205 136.07 14.6199 137 12.1297 137H10C4.47715 137 0 132.522 0 127V9.99951Z"
-                                fill="#0D5EF4"></path>
-                        </svg></div>
-                    <div class="testi-box_content">
-                        <div class="testi-box_img">
-                            <img decoding="async" src="images/Avani-thakur.png" alt="testi_1_1"></div>
-                        <div>
-                            <p><b>“Linkedin Microsoft Certification - Azure AI Fundamentals”</b></p>
-                            <p>Proud to share that I’ve earned my Microsoft certification, thanks to the invaluable
-                            industrial training and internship at Coincent! Grateful for the opportunity and the
-                            incredible learning experience
+</div>
 
-                            During the program, I had the chance to dive into…<a
-                                href="https://www.linkedin.com/posts/avani-thakur-81b6351b2_microsoftazure-azureai-coincentai-activity-7255926093658935298-B0lX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAI7OFABlIq_ZUbEJtNt_AFYL9eBSI3_ncY"
-                                target="_blank" class="text-blue">read more</a></p>
+<div class="col-md-3">
+                        <div class="card project">
+                            <h4>Live Project Training</h4>
+                            <p>MEGHANA KALYANI completed Microsoft project training.</p>
                         </div>
+</div>
+
+                        <!-- More cards as needed -->
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </div>
 
@@ -930,13 +858,17 @@
                         </div>
                         <div class="d-flex justify-content-between align-items-center pt-3 pb-3">
                             <div><i class="fa-solid fa-calendar-days text-blue me-1"></i> 16 Jun 2025</div>
-                            <div class="d-flex justify-content-center align-items-center"><div class="blog-user"><img src="images/madhuresh.jpg" width="100%" alt=""></div> 
-                            By Madhuresh</div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="blog-user"><img src="images/madhuresh.jpg" width="100%" alt=""></div>
+                                By Madhuresh
+                            </div>
                         </div>
                         <div>
-                            <h5>From Freshman at LPU to Professional at Movidu: How Coincent Rewrote My Career Story</h5>
+                            <h5>From Freshman at LPU to Professional at Movidu: How Coincent Rewrote My Career Story
+                            </h5>
                         </div>
-                        <a href="https://mycareerstory4545.blogspot.com/2025/06/from-freshman-at-lpu-to-professional-at.html" target="_blank" class="text-blue ls-1">Read More <i
+                        <a href="https://mycareerstory4545.blogspot.com/2025/06/from-freshman-at-lpu-to-professional-at.html"
+                            target="_blank" class="text-blue ls-1">Read More <i
                                 class="fa-solid fa-arrow-right-long ani-1"></i></a>
                     </div>
                 </div>
@@ -949,13 +881,17 @@
                         </div>
                         <div class="d-flex justify-content-between align-items-center pt-3 pb-3">
                             <div><i class="fa-solid fa-calendar-days text-blue me-1"></i> 15 Jun 2025</div>
-                            <div class="d-flex justify-content-center align-items-center"><div class="blog-user"><img src="images/vasu.jpg" width="100%" alt=""></div> 
-                            By Vasu</div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="blog-user"><img src="images/vasu.jpg" width="100%" alt=""></div>
+                                By Vasu
+                            </div>
                         </div>
                         <div>
-                            <h5>Hear It From Our Clients!! </h5>
+                            <h5>What Is the Coincent 3-Year Program? — My Journey from Student to Working Professional
+                            </h5>
                         </div>
-                        <a href="https://medium.com/@getinrajesh03/what-is-the-coincent-3-year-program-my-journey-from-student-to-working-professional-871a9e65fb11" target="_blank" class="text-blue ls-1">Read More <i
+                        <a href="https://medium.com/@getinrajesh03/what-is-the-coincent-3-year-program-my-journey-from-student-to-working-professional-871a9e65fb11"
+                            target="_blank" class="text-blue ls-1">Read More <i
                                 class="fa-solid fa-arrow-right-long ani-1"></i></a>
                     </div>
                 </div>
@@ -968,13 +904,18 @@
                         </div>
                         <div class="d-flex justify-content-between align-items-center pt-3 pb-3">
                             <div><i class="fa-solid fa-calendar-days text-blue me-1"></i> 17 Jun 2025</div>
-                            <div class="d-flex justify-content-center align-items-center"><div class="blog-user"><img src="images/Sanchit.jpg" width="100%" height="100%" alt=""></div> 
-                            By Sanju</div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="blog-user"><img src="images/Sanchit.jpg" width="100%" height="100%" alt="">
+                                </div>
+                                By Sanju
+                            </div>
                         </div>
                         <div>
-                            <h5>Complete Guide to Coincent 3-Year Program: Resume Building, Microsoft Certification, Internships...</h5>
+                            <h5>Complete Guide to Coincent 3-Year Program: Resume Building, Microsoft Certification,
+                                Internships...</h5>
                         </div>
-                        <a href="https://coincent-3-year-program.blogspot.com/2025/06/complete-guide-to-coincent-3year.html" target="_blank" class="text-blue ls-1">Read More <i
+                        <a href="https://coincent-3-year-program.blogspot.com/2025/06/complete-guide-to-coincent-3year.html"
+                            target="_blank" class="text-blue ls-1">Read More <i
                                 class="fa-solid fa-arrow-right-long ani-1"></i></a>
                     </div>
                 </div>
@@ -987,13 +928,18 @@
                         </div>
                         <div class="d-flex justify-content-between align-items-center pt-3 pb-3">
                             <div><i class="fa-solid fa-calendar-days text-blue me-1"></i> 17 Jun 2025</div>
-                            <div class="d-flex justify-content-center align-items-center"><div class="blog-user"><img src="images/Reethik.jpg" width="100%" height="100%" alt=""></div> 
-                            By Reethik</div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="blog-user"><img src="images/Reethik.jpg" width="100%" height="100%" alt="">
+                                </div>
+                                By Reethik
+                            </div>
                         </div>
                         <div>
-                            <h5>What are the benefits of 3 year Coincent program?-My journey from student to working professional</h5>
+                            <h5>What are the benefits of 3 year Coincent program?-My journey from student to working
+                                professional</h5>
                         </div>
-                        <a href="https://medium.com/@reethikjanaki/what-are-the-benefits-of-3-year-coincent-program-my-journey-from-student-to-working-professional-3dcda4af07fd" target="_blank" class="text-blue ls-1">Read More <i
+                        <a href="https://medium.com/@reethikjanaki/what-are-the-benefits-of-3-year-coincent-program-my-journey-from-student-to-working-professional-3dcda4af07fd"
+                            target="_blank" class="text-blue ls-1">Read More <i
                                 class="fa-solid fa-arrow-right-long ani-1"></i></a>
                     </div>
                 </div>
@@ -1006,13 +952,17 @@
                         </div>
                         <div class="d-flex justify-content-between align-items-center pt-3 pb-3">
                             <div><i class="fa-solid fa-calendar-days text-blue me-1"></i> 06 Jul 2025</div>
-                            <div class="d-flex justify-content-center align-items-center"><div class="blog-user"><img src="images/Coincent_logo.png" width="100%" height="100%" alt=""></div> 
-                            By Admin</div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="blog-user"><img src="images/Coincent_logo.png" width="100%" height="100%"
+                                        alt=""></div>
+                                By Admin
+                            </div>
                         </div>
                         <div>
                             <h5>Real Project Experience: How Coincent Helps Students Build a Job-Ready Resume</h5>
                         </div>
-                        <a href="https://medium.com/@coincent/real-project-experience-how-coincent-helps-students-build-a-job-ready-resume-09dc07c4d900" target="_blank" class="text-blue ls-1">Read More <i
+                        <a href="https://medium.com/@coincent/real-project-experience-how-coincent-helps-students-build-a-job-ready-resume-09dc07c4d900"
+                            target="_blank" class="text-blue ls-1">Read More <i
                                 class="fa-solid fa-arrow-right-long ani-1"></i></a>
                     </div>
                 </div>
@@ -1036,20 +986,20 @@
                         <div class="price">Rs. 3499/- (per Domain)</div>
                         <p class="text-blue"><b>Includes:</b></p>
                         <ul>
-                            <li>📅 <b>Program Duration: 3 Years</b>
+                            <li><b>Program Duration: 3 Years</b>
                                 <ul>
                                     <li>Year 1: 2.5 Months of Live Industrial Training</li>
                                     <li>Year 2: 3 Months of Project-Driven Learning & Real-World Application</li>
                                     <li>Year 3: 3 Months of Guaranteed Internship and Placement Support</li>
                                 </ul>
                             </li>
-                            <li>📚 30+ Hours of Content</li>
-                            <li>💡 8 Live Projects (with mentor guidance)</li>
-                            <li>🔓 Lifetime Dashboard Access</li>
-                            <li>📄 Project Completion Certificate</li>
-                            <li>🎓 Internship Completion Certificate</li>
-                            <li>🪪 Microsoft Certificate</li>
-                            <li>🧰 Customized Resume Builder & Placement Assistance</li>
+                            <li>30+ Hours of Content</li>
+                            <li>8 Live Projects (with mentor guidance)</li>
+                            <li>Lifetime Dashboard Access</li>
+                            <li>Project Completion Certificate</li>
+                            <li>Internship Completion Certificate</li>
+                            <li>Microsoft Certificate</li>
+                            <li>Customized Resume Builder & Placement Assistance</li>
                         </ul>
                         <div class="text-center">
                             <a href="https://rzp.io/rzp/7lCSWXF" target="_blank" class="btn btn-primary">Enroll Now</a>
@@ -1065,21 +1015,21 @@
                         <div class="price">Rs. 5499/- (Combo Domain)</div>
                         <p class="text-blue"><b>Includes:</b></p>
                         <ul>
-                            <li>📅 <b>Program Duration: 3 Years</b></li>
+                            <li><b>Program Duration: 3 Years</b></li>
                             <ul>
                                 <li>Year 1: 2.5 Months of Live Industrial Training</li>
                                 <li>Year 2: 3 Months of Project-Driven Learning & Real-World Application</li>
                                 <li>Year 3: 3 Months of Guaranteed Internship & Placement Support</li>
                             </ul>
 
-                            <li>🎁 Bonus: Free Domain in Startup & Entrepreneurship</li>
-                            <li>📚 70+ Hours of Content</li>
-                            <li>💡 16+ Live Projects (with mentor guidance)</li>
-                            <li>🔓 Lifetime Dashboard Access</li>
-                            <li>📄 Project Completion Certificate</li>
-                            <li>🎓 Internship Completion Certificate</li>
-                            <li>🪪 Microsoft Certificate</li>
-                            <li>🧰 Customized Resume Builder & Placement Assistance</li>
+                            <li>Bonus: Free Domain in Startup & Entrepreneurship</li>
+                            <li>70+ Hours of Content</li>
+                            <li>16+ Live Projects (with mentor guidance)</li>
+                            <li>Lifetime Dashboard Access</li>
+                            <li>Project Completion Certificate</li>
+                            <li>Internship Completion Certificate</li>
+                            <li>Microsoft Certificate</li>
+                            <li>Customized Resume Builder & Placement Assistance</li>
                         </ul>
                         <div class="text-center">
                             <a href="https://rzp.io/rzp/uf0Tzb29" target="_blank" class="btn btn-primary">Enroll Now</a>
@@ -1666,13 +1616,15 @@
                         preparation in the 3rd year.</p>
                     <div>
                         <h5>Follow Us</h5>
-                        <a href="https://www.instagram.com/coincent.ai?igsh=MWx1YXM1OHVqdXBrag==" target="_blank" class="text-decoration-none text-dark me-2"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/coincent.ai?igsh=MWx1YXM1OHVqdXBrag==" target="_blank"
+                            class="text-decoration-none text-dark me-2"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/company/coincent-ai/" target="_blank"
                             class="text-decoration-none text-dark me-2"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.youtube.com/@coincent" target="_blank" class="text-decoration-none text-dark me-2"><i
-                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/@coincent" target="_blank"
+                            class="text-decoration-none text-dark me-2"><i class="fa-brands fa-youtube"></i></a>
                         <a href="https://trainingsupport.microsoft.com/en-us/mcp/forum/all/coincent-3-year-program-with-microsoft/152968e8-f381-4c23-a6d6-067f1ef897da?page=2"
-                             target="_blank" class="text-decoration-none text-dark me-2"><i class="fa-brands fa-microsoft"></i></a>
+                            target="_blank" class="text-decoration-none text-dark me-2"><i
+                                class="fa-brands fa-microsoft"></i></a>
                         <a href="https://qr.ae/pADjQR" target="_blank" class="text-decoration-none text-dark me-2"><i
                                 class="fa-brands fa-quora"></i></a>
                     </div>
@@ -1700,12 +1652,12 @@
             </div>
             <hr>
             <!--- END ROW -->
-                <div class=" row ">
-                    <div class=" col-lg-12 col-sm-12 col-xs-12 ">
-                        <p class=" copyright ">&copy; copyright 2025 Coincent. All rights reserved.</p>
-                    </div>
-                    <!--- END COL -->
+            <div class=" row ">
+                <div class=" col-lg-12 col-sm-12 col-xs-12 ">
+                    <p class=" copyright ">&copy; copyright 2025 Coincent. All rights reserved.</p>
                 </div>
+                <!--- END COL -->
+            </div>
         </div>
     </footer>
 
@@ -1857,6 +1809,26 @@
                 this.className += " active-3";
             });
         }
+    </script>
+
+    <!-- certificate -->
+    <script>
+        const filterButtons = document.querySelectorAll(".filters button");
+        const cardsss = document.querySelectorAll(".certifications .card");
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const filter = button.getAttribute("data-filter");
+
+                cardsss.forEach(card => {
+                    if (filter === "all" || card.classList.contains(filter)) {
+                        card.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+            });
+        });
     </script>
 </body>
 
