@@ -857,4 +857,10 @@ footer a i:hover {
         display: flex;
         flex-direction: column;
     }
+    .section-3 .card img{
+        height: 200px !important;
+    }
+    .mentor-card-img{
+        height: 300px;
+    }
 }
