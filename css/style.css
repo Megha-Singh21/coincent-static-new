@@ -114,8 +114,8 @@ a:hover {
     position: absolute;
 }
 .hero-section .shape12 {
-    top: 300px;
-    right: 365px;
+    top: 296px;
+    right: 355px;
     z-index: 9;
 }
 .hero-section .shape1 {
@@ -186,6 +186,14 @@ a:hover {
     z-index: 2;
     animation: jumpAni 7s linear infinite;
 }
+
+.fixed-icon {
+  position: fixed;
+  z-index: 2;
+  bottom: 50px;
+  right: 50px;
+}
+
 @keyframes jumpAni {
     0% {
         -webkit-transform: translateX(0);
@@ -501,7 +509,7 @@ footer a{
     transition: all 0.3s ease-in-out;
 }
 footer a:hover {
-    color: #1b4b9e;
+    color: #eccd04;
 }
 footer a i {
     font-size: 20\5px;
@@ -509,7 +517,7 @@ footer a i {
     transition: all 0.3s ease-in-out;
 }
 footer a i:hover {
-    color: #1b4b9e;
+    color: #eccd04;
 }
 
 /* PDP */
