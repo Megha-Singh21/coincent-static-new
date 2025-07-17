@@ -69,7 +69,7 @@
                 <a class="navbar-brand" href="index.html">
                     <img src="images/coincent-logo-blue.png" width="150" alt="">
                 </a>
-                <!-- <div class="navbar-nav">
+                <div class="navbar-nav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <div class="dropdown">
@@ -78,23 +78,36 @@
                                     Domains
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Artificial Intelligence</a></li>
-                                    <li><a class="dropdown-item" href="#">Web Development</a></li>
-                                    <li><a class="dropdown-item" href="#">Data Science</a></li>
-                                    <li><a class="dropdown-item" href="#">Machine Learning</a></li>
-                                    <li><a class="dropdown-item" href="#">Cloud Computing</a></li>
-                                    <li><a class="dropdown-item" href="#">Cyber Security</a></li>
-                                    <li><a class="dropdown-item" href="#">Android Development</a></li>
-                                    <li><a class="dropdown-item" href="#">Internet of Things (IoT)</a></li>
-                                    <li><a class="dropdown-item" href="#">Java</a></li>
-                                    <li><a class="dropdown-item" href="#">VLSI</a></li>
-                                    <li><a class="dropdown-item" href="#">Hybrid EV</a></li>
-                                    <li><a class="dropdown-item" href="#">Start-up & Business</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">AI & ML</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="ai.html">Artificial Intelligence</a></li>
+                                            <li><a class="dropdown-item" href="ml.html">Machine Learning</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Software & Tech</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="wd.html">Web Development</a></li>
+                                            <li><a class="dropdown-item" href="java.html">Java</a></li>
+                                            <li><a class="dropdown-item" href="ui-ux.html">UI/UX Design</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="ds.html">Data Science</a></li>
+                                    <li><a class="dropdown-item" href="cs.html">Cyber Security</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">IoT & VLSI</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="iot.html">Internet of Things</a></li>
+                                            <li><a class="dropdown-item" href="vlsi.html">VLSI</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="startup.html">Start-up & Business</a></li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
-                </div> -->
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -207,7 +220,7 @@
     <div class="section-2 container pt-5 pb-5">
         <div class="row">
             <div class="col-md-2 d-flex align-items-center justify-content-center">
-                <h2 class="head-2 ls-1">Recognised <span class="text-blue">by</span></h2>
+                <h2 class="head-2 ls-1">Recognised <span class="text-blue">By</span></h2>
             </div>
             <div class="col-md-10">
                 <div class="reco-logo owl-carousel owl-theme">
@@ -249,7 +262,7 @@
                         </div>
                         <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('cs')">Cyber Security
                         </div>
-                        <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('iot')">IoT, VLSI, HEV
+                        <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('iot')">IoT, VLSI
                         </div>
                         <div class="btn btn-secondary ls-1 mb-2 filter" onclick="filterSelection('bs')">Business</div>
                     </div>
@@ -1239,7 +1252,7 @@
             </div>
             <div>
                 <div class="faq-filters">
-                    <button data-filter="all">all</button>
+                    <button data-filter="all">All</button>
                     <button data-filter="industrial">Industrial Training</button>
                     <button data-filter="live">Live Project</button>
                     <button data-filter="benefits">Benefits</button>
@@ -1986,6 +1999,20 @@
             }
         })
     </script>
+    <script>
+        // JavaScript to handle the submenu interaction
+        document.querySelectorAll('.dropdown-submenu').forEach(function (submenu) {
+            submenu.addEventListener('mouseenter', function () {
+                const submenuMenu = submenu.querySelector('.dropdown-menu');
+                submenuMenu.classList.add('show'); // Show the submenu on hover
+            });
+            submenu.addEventListener('mouseleave', function () {
+                const submenuMenu = submenu.querySelector('.dropdown-menu');
+                submenuMenu.classList.remove('show'); // Hide the submenu when the mouse leaves
+            });
+        });
+    </script>
+    <!-- mentor -->
     <script>
         // Add active class to the current button (highlight it)
         var header = document.getElementById("section-6");

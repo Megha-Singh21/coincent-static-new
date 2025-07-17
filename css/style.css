@@ -759,6 +759,16 @@ footer a i:hover {
     height: 100px;
 }
 
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    left: 100%;
+    top: 0;
+    margin-top: -5px;
+}
+
 /* responsive */
 @media screen and (max-width: 600px) {
     .hero-main {
@@ -857,10 +867,12 @@ footer a i:hover {
         display: flex;
         flex-direction: column;
     }
-    .section-3 .card img{
+
+    .section-3 .card img {
         height: 200px !important;
     }
-    .mentor-card-img{
+
+    .mentor-card-img {
         height: 300px;
     }
 }
