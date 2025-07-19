@@ -188,6 +188,14 @@
                                                     data-bs-target="#v-pills-6" type="button" role="tab"
                                                     aria-controls="v-pills-6" aria-selected="false">Chapter 6:
                                                     Actuators and Motor Control</button>
+                                                <button class="nav-link" id="v-pills-7-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-7" type="button" role="tab"
+                                                    aria-controls="v-pills-7" aria-selected="false">Chapter 7:
+                                                    Robotics Integration</button>
+                                                <button class="nav-link" id="v-pills-8-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-8" type="button" role="tab"
+                                                    aria-controls="v-pills-8" aria-selected="false">Chapter 8:
+                                                    Introduction to IoT Platforms & Protocols</button>
 
                                             </div>
                                             <div class="tab-content" id="v-pills-tabContent">
@@ -362,6 +370,48 @@
                                                     </ul>
 
                                                 </div>
+                                                <div class="tab-pane fade" id="v-pills-7" role="tabpanel"
+                                                    aria-labelledby="v-pills-7-tab">
+                                                    <p class="text-blue"><b>Learning Objectives:</b></p>
+                                                    <ul>
+                                                        <li>Build basic robotic systems</li>
+                                                        <li>Combine sensors with actuators</li>
+                                                    </ul>
+
+                                                    <p class="text-blue"><b>Topics Covered:</b></p>
+                                                    <ul>
+                                                        <li>Robot design principles</li>
+                                                        <li>Remote-controlled robot using pushbuttons</li>
+                                                        <li>Obstacle avoidance logic using ultrasonic</li>
+                                                        <li>Speed control using PWM</li>
+                                                    </ul>
+
+                                                    <p class="text-blue"><b>Projects:</b></p>
+                                                    <ul>
+                                                        <li>Obstacle Avoidance Robot</li>
+                                                        <li>Smart Vacuum Cleaner Prototype</li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-8" role="tabpanel"
+                                                    aria-labelledby="v-pills-8-tab">
+                                                    <p class="text-blue"><b>Learning Objectives:</b></p>
+                                                    <ul>
+                                                        <li>Understand IoT system components</li>
+                                                        <li>Learn about boards and protocols</li>
+                                                    </ul>
+
+                                                    <p class="text-blue"><b>Topics Covered:</b></p>
+                                                    <ul>
+                                                        <li>ESP8266 vs ESP32 vs Arduino UNO</li>
+                                                        <li>Wi-Fi, Bluetooth, LoRa</li>
+                                                        <li>HTTP vs MQTT protocol</li>
+                                                        <li>Cloud computing for IoT</li>
+                                                        <li>Case Study: Smart irrigation system architecture</li>
+                                                    </ul>
+
+
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -373,96 +423,80 @@
                                         <div class="item">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <h5>Hierarchical Clustering</h5>
+                                                    <h5>Automatic Room Temperature Controller</h5>
                                                     <div class="d-flex align-items-center mt-2 mb-2"><i
                                                             class="fa-solid fa-hourglass-end text-blue me-1"></i> 22
                                                         Hours</div>
-                                                    <p>Hierarchical Clustering is an unsupervised learning technique
-                                                        used to group similar data points into clusters based on
-                                                        distance metrics. It builds a tree-like structure (dendrogram)
-                                                        to show...</p>
+                                                    <p>This project uses sensors like DHT11 or DHT22 to monitor room
+                                                        temperature and humidity in real-time. Based on sensor data, it
+                                                        controls fans or air conditioners using a microcontroller...</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="item">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <h5>ChatBot</h5>
+                                                    <h5>Voice Control Home Automation</h5>
                                                     <div class="d-flex align-items-center mt-2 mb-2"><i
                                                             class="fa-solid fa-hourglass-end text-blue me-1"></i> 19
                                                         Hours</div>
-                                                    <p>A ChatBot is an AI-powered tool designed to simulate human-like
-                                                        conversations using natural language processing (NLP). It can be
-                                                        rule-based or machine learning-based...</p>
+                                                    <p>This system enables controlling home appliances like lights and
+                                                        fans using voice commands via Google Assistant or Alexa. It
+                                                        integrates IoT platforms like Blynk or IFTTT with
+                                                        ESP32/NodeMCU...</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="item">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <h5>Linear Discriminant Analysis (LDA)</h5>
+                                                    <h5>Obstacle Avoidance Robot using Ultrasonic Sensor</h5>
                                                     <div class="d-flex align-items-center mt-2 mb-2"><i
                                                             class="fa-solid fa-hourglass-end text-blue me-1"></i> 23
                                                         Hours</div>
-                                                    <p>LDA is a supervised dimensionality reduction technique that
-                                                        maximizes class separability by projecting data into lower
-                                                        dimensions. It is commonly used in classification tasks to
-                                                        improve...</p>
+                                                    <p>The robot detects obstacles using ultrasonic sensors and
+                                                        navigates by changing direction to avoid collisions. It uses an
+                                                        Arduino or Raspberry Pi to control motors based on...</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="item">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <h5>Hate Speech Detection</h5>
+                                                    <h5>IoT based Smart Factory System</h5>
                                                     <div class="d-flex align-items-center mt-2 mb-2"><i
                                                             class="fa-solid fa-hourglass-end text-blue me-1"></i> 20
                                                         Hours</div>
-                                                    <p>Hate Speech Detection is a text classification task that
-                                                        identifies and filters offensive or harmful content online. It
-                                                        involves preprocessing text, feature extraction (TF-IDF or
-                                                        embeddings)...</p>
+                                                    <p>This project monitors factory parameters like temperature,
+                                                        vibration, or gas levels using sensors connected to ESP32. The
+                                                        data is transmitted to cloud platforms like...</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="item">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <h5>SMS Spam Classification</h5>
+                                                    <h5>IoT based Weather Data System using ESP32</h5>
                                                     <div class="d-flex align-items-center mt-2 mb-2"><i
                                                             class="fa-solid fa-hourglass-end text-blue me-1"></i> 21
                                                         Hours</div>
-                                                    <p>SMS Spam Classification is a binary text classification project
-                                                        that identifies whether a message is spam or ham (not spam). It
-                                                        involves preprocessing the text (removing stop words,
-                                                        tokenization)...</p>
+                                                    <p>This system collects environmental data like temperature,
+                                                        humidity, and air pressure using sensors like DHT11 or BMP180.
+                                                        The ESP32 sends this data to cloud dashboards...</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="item">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <h5>Surprise Housing Case Study</h5>
+                                                    <h5>Smart Building using BLYNK</h5>
                                                     <div class="d-flex align-items-center mt-2 mb-2"><i
                                                             class="fa-solid fa-hourglass-end text-blue me-1"></i> 18
                                                         Hours</div>
-                                                    <p>The Surprise Housing Case Study aims to build a regression model
-                                                        to predict house prices based on features like location, size,
-                                                        and amenities. It involves exploratory data analysis (EDA)...
+                                                    <p>This IoT solution automates and monitors building systems like
+                                                        lighting, security, and temperature using Blynk and ESP32. Data
+                                                        from sensors is sent to the Blynk app for real-time...
                                                     </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5>Credit EDA (Exploratory Data Analysis)</h5>
-                                                    <div class="d-flex align-items-center mt-2 mb-2"><i
-                                                            class="fa-solid fa-hourglass-end text-blue me-1"></i> 22
-                                                        Hours</div>
-                                                    <p>Credit EDA involves analyzing credit-related datasets to uncover
-                                                        patterns, detect anomalies, and understand borrower behavior. It
-                                                        includes univariate and bivariate analysis...</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -471,77 +505,51 @@
                                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 
                                     <h5 class="text-blue"><b>Step Into Top Tech Roles:</b></h5>
-                                    <p class="text-blue"><b>1. Data Scientist</b></p>
+                                    <p class="text-blue"><b>1. IoT Developer:</b></p>
                                     <ul>
-                                        <li><b>Focus:</b> Analyzing data, building predictive models, extracting
-                                            insights.</li>
-                                        <li><b>Skills:</b> Python/R, statistics, machine learning, data visualization.
-                                        </li>
-                                        <li><b>Tools:</b> Pandas, Scikit-learn, TensorFlow, SQL, Jupyter, Tableau.</li>
+                                        <li>Develops software and firmware for IoT devices and applications, focusing on
+                                            connectivity and communication protocols.</li>
+                                        <li>May work with various programming languages (like C, Python) and hardware
+                                            platforms.</li>
+                                        <li>Involved in creating APIs and integrating IoT data with databases and cloud
+                                            platforms.</li>
                                     </ul>
 
-                                    <p class="text-blue"><b>2. Data Analyst</b></p>
+                                    <p class="text-blue"><b>2. Embedded Systems Engineer:</b></p>
                                     <ul>
-                                        <li><b>Focus:</b> Data querying, reporting, and visualization to support
-                                            business decisions.</li>
-                                        <li><b>Skills:</b> SQL, Excel, data storytelling, basic statistics.</li>
-                                        <li><b>Tools:</b> Power BI, Tableau, Python (Pandas/Matplotlib), Google Data
-                                            Studio.</li>
-                                    </ul>
-
-                                    <p class="text-blue"><b>3. Machine Learning Engineer</b></p>
-                                    <ul>
-                                        <li><b>Focus:</b> Designing, training, and deploying ML models in production.
-                                        </li>
-                                        <li><b>Skills:</b> Deep learning, model optimization, software engineering.</li>
-                                        <li><b>Tools:</b> TensorFlow, PyTorch, MLflow, Docker, Kubernetes.</li>
-                                    </ul>
-
-                                    <p class="text-blue"><b>4. Data Engineer</b></p>
-                                    <ul>
-                                        <li><b>Focus:</b> Building and maintaining data pipelines and architecture.</li>
-                                        <li><b>Skills:</b> ETL processes, big data frameworks, database design.</li>
-                                        <li><b>Tools:</b> Apache Spark, Hadoop, SQL/NoSQL, Airflow, AWS/GCP.</li>
-                                    </ul>
-
-                                    <p class="text-blue"><b>5. AI/Deep Learning Engineer</b></p>
-                                    <ul>
-                                        <li><b>Focus:</b> Developing neural network models for vision, NLP, etc.</li>
-                                        <li><b>Skills:</b> Deep learning, computer vision, natural language processing.
-                                        </li>
-                                        <li><b>Tools:</b> PyTorch, TensorFlow, Keras, Hugging Face, OpenCV.</li>
-                                    </ul>
-
-                                    <p class="text-blue"><b>6. Business Intelligence (BI) Developer</b></p>
-                                    <ul>
-                                        <li><b>Focus:</b> Transforming raw data into actionable insights using
-                                            dashboards.</li>
-                                        <li><b>Skills:</b> Data modeling, data visualization, database querying.</li>
-                                        <li><b>Tools:</b> Power BI, Tableau, Looker, DAX, SQL.</li>
-                                    </ul>
-
-                                    <p class="text-blue"><b>7. Data Architect</b></p>
-                                    <ul>
-                                        <li><b>Focus:</b> Designing the overall structure and integration of data
+                                        <li>Designs and develops the core hardware and software components of embedded
                                             systems.</li>
-                                        <li><b>Skills:</b> Data modeling, systems architecture, data governance.</li>
-                                        <li><b>Tools:</b> ER/Studio, AWS Redshift, Azure Synapse, Snowflake.</li>
+                                        <li>May specialize in areas like firmware development, hardware design, or
+                                            system integration.</li>
+                                        <li>Works on optimizing performance, power consumption, and real-time
+                                            functionality.</li>
                                     </ul>
 
-                                    <p class="text-blue"><b>8. MLOps Engineer</b></p>
+                                    <p class="text-blue"><b>3. IoT Architect:</b></p>
                                     <ul>
-                                        <li><b>Focus:</b> Automating ML workflows and managing model lifecycle in
-                                            production.</li>
-                                        <li><b>Skills:</b> DevOps + ML, model deployment, CI/CD pipelines.</li>
-                                        <li><b>Tools:</b> Docker, Kubernetes, MLflow, TensorFlow Serving, Git.</li>
+                                        <li>Designs and oversees the overall architecture of IoT solutions, focusing on
+                                            scalability, security, and performance.</li>
+                                        <li>Collaborates with various teams (product management, software engineering)
+                                            to translate requirements into architecture and design.</li>
+                                        <li>Recommends and integrates emerging technologies to solve complex business
+                                            problems.</li>
                                     </ul>
 
-                                    <p class="text-blue"><b>Growth of Data Science Roles</b></p>
+                                    <p class="text-blue"><b>4. Firmware Engineer:</b></p>
                                     <ul>
-                                        <li><b>2015:</b> Data science roles made up around 2% of tech jobs.</li>
-                                        <li><b>2025 (Projected):</b> The share is expected to reach 22% of all tech
-                                            roles.</li>
-                                        <li><b>2030 (Projected):</b> Projected to be around 34% of all tech roles.</li>
+                                        <li>Develops and maintains the low-level software (firmware) that runs on
+                                            embedded devices.</li>
+                                        <li>May be responsible for porting or rewriting firmware for new hardware.</li>
+                                        <li>Works with programming languages like C and C++.</li>
+                                    </ul>
+
+                                    <p class="text-blue"><b>5. Embedded Hardware Engineer:</b></p>
+                                    <ul>
+                                        <li>Designs and develops the physical components of embedded systems, including
+                                            circuit boards, sensors, and microcontrollers.</li>
+                                        <li>Requires strong knowledge of electronics, PCB design, and signal processing.
+                                        </li>
+                                        <li>May be involved in testing and debugging hardware.</li>
                                     </ul>
 
                                 </div>
