@@ -770,13 +770,38 @@ footer a i:hover {
 }
 
 /* plp */
-.plp-section1{
+.plp-section1 {
     background-image: url('../images/plp-image.webp');
     background-size: cover;
     background-position: center;
     height: 350px;
 }
 
+.mentor-plp .card {
+    width: 35%;
+}
+
+.mentor-plp .tab-content {
+    width: 65%;
+}
+
+.mentor-plp .card button {
+    width: 100%;
+}
+
+.mentor-plp-img {
+    width: 15%;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mentor-plp-img-2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
 
 /* responsive */
 @media screen and (max-width: 600px) {
@@ -897,8 +922,25 @@ footer a i:hover {
         width: 350px;
         height: 350px;
     }
+
     .plp-section1 {
         background-position: initial;
+    }
+
+    .mentor-plp-img-2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .mentor-plp .card {
+        width: 25%;
+    }
+
+    .mentor-plp .tab-content {
+        width: 25%;
+    }
+    .mentor-plp-img{
+        display: none;
     }
 }
 
@@ -1021,7 +1063,19 @@ footer a i:hover {
         width: 350px;
         height: 350px;
     }
+
     .plp-section1 {
         background-position: initial;
+    }
+
+    .mentor-plp .card {
+        width: 22%;
+    }
+
+    .mentor-plp .tab-content {
+        width: 22%;
+    }
+    .mentor-plp-img{
+        display: none;
     }
 }
