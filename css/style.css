@@ -881,6 +881,10 @@ footer a i:hover {
         display: block !important;
     }
 
+    #price .card {
+        height: fit-content;
+    }
+
     .blog-card-img {
         height: 200px;
     }
@@ -943,15 +947,17 @@ footer a i:hover {
     .mentor-plp .tab-content {
         width: 100%;
     }
-    .mentor-plp-img{
+
+    .mentor-plp-img {
         display: none;
     }
+
     .hero-section .shape12 {
-    top: 65%;
-    right: 0px;
-    z-index: 9;
-    left: 39%;
-}
+        top: 65%;
+        right: 0px;
+        z-index: 9;
+        left: 39%;
+    }
 }
 
 /* responsive */
@@ -1032,6 +1038,10 @@ footer a i:hover {
         display: block !important;
     }
 
+    #price .card {
+        height: fit-content;
+    }
+
     .blog-card-img {
         height: 200px;
     }
@@ -1077,9 +1087,11 @@ footer a i:hover {
     .plp-section1 {
         background-position: initial;
     }
+
     .mentor-plp .vertical-tab {
         display: block !important;
     }
+
     .mentor-plp .card {
         width: 100%;
     }
@@ -1087,13 +1099,22 @@ footer a i:hover {
     .mentor-plp .tab-content {
         width: 100%;
     }
-    .mentor-plp-img{
+
+    .mentor-plp-img {
         display: none;
     }
+
     .hero-section .shape12 {
-    top: 65%;
-    right: 0px;
-    z-index: 9;
-    left: 39%;
+        top: 65%;
+        right: 0px;
+        z-index: 9;
+        left: 39%;
+    }
 }
+
+@media (min-width: 1500px) and (max-width: 1920px) {
+    .hero-section .shape12 {
+    top: 296px;
+    right: 30.5%;
+    }
 }
