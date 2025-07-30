@@ -878,7 +878,7 @@ footer a i:hover {
     }
 
     .vertical-tab {
-        display: inline-block !important;
+        display: block !important;
     }
 
     .blog-card-img {
@@ -932,16 +932,26 @@ footer a i:hover {
         height: 100px;
     }
 
+    .mentor-plp .vertical-tab {
+        display: block !important;
+    }
+
     .mentor-plp .card {
-        width: 25%;
+        width: 100%;
     }
 
     .mentor-plp .tab-content {
-        width: 25%;
+        width: 100%;
     }
     .mentor-plp-img{
         display: none;
     }
+    .hero-section .shape12 {
+    top: 65%;
+    right: 0px;
+    z-index: 9;
+    left: 39%;
+}
 }
 
 /* responsive */
@@ -1019,7 +1029,7 @@ footer a i:hover {
     }
 
     .vertical-tab {
-        display: inline-block !important;
+        display: block !important;
     }
 
     .blog-card-img {
@@ -1067,15 +1077,23 @@ footer a i:hover {
     .plp-section1 {
         background-position: initial;
     }
-
+    .mentor-plp .vertical-tab {
+        display: block !important;
+    }
     .mentor-plp .card {
-        width: 22%;
+        width: 100%;
     }
 
     .mentor-plp .tab-content {
-        width: 22%;
+        width: 100%;
     }
     .mentor-plp-img{
         display: none;
     }
+    .hero-section .shape12 {
+    top: 65%;
+    right: 0px;
+    z-index: 9;
+    left: 39%;
+}
 }
