@@ -389,7 +389,7 @@ a:hover {
     visibility: hidden;
     height: 0;
     right: 20px;
-    top: 200px;
+    top: 140px;
     z-index: 2;
 }
 
@@ -403,7 +403,7 @@ a:hover {
 }
 
 .mentor-card-img {
-    height: 230px;
+    height: 160px;
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
@@ -414,6 +414,18 @@ a:hover {
 .mentor-card-img img:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
+}
+.section-6 .card h5{
+    font-size: 17px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.section-6 .card p{
+    font-size: 15px;
+}
+.section-6 .card span{
+    font-size: 11px;
+    color: #676767;
 }
 
 .section-7 {
@@ -535,16 +547,12 @@ a:hover {
     transition: all 0.3s ease-in-out;
 }
 
-.faq-filters {
-    display: flex;
-    flex-direction: row;
-}
-
 .faq-filters button {
     margin: 5px 5px;
     padding: 5px 10px;
     background: linear-gradient(to right, #003366, #1d51bf);
     color: white;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     border-radius: 10px;
