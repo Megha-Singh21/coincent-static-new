@@ -277,6 +277,23 @@ a:hover {
     box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.15);
     overflow: hidden;
 }
+.section-3 .card .btn{
+    width: -webkit-fill-available
+}
+.course-img {
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(360deg, #FACC15 0%, #213D6C 100%);
+
+}
+.card-img-top {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+}
 
 .section-4 {
     background-image: url('../images/alumni_bg.webp');
