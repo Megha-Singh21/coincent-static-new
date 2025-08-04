@@ -277,9 +277,11 @@ a:hover {
     box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.15);
     overflow: hidden;
 }
-.section-3 .card .btn{
+
+.section-3 .card .btn {
     width: -webkit-fill-available
 }
+
 .course-img {
     height: 150px;
     width: 100%;
@@ -288,6 +290,7 @@ a:hover {
     background: linear-gradient(360deg, #FACC15 0%, #213D6C 100%);
 
 }
+
 .card-img-top {
     height: 100%;
     width: 100%;
@@ -415,15 +418,18 @@ a:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
 }
-.section-6 .card h5{
+
+.section-6 .card h5 {
     font-size: 17px;
     margin-bottom: 0px;
     font-weight: 600;
 }
-.section-6 .card p{
+
+.section-6 .card p {
     font-size: 15px;
 }
-.section-6 .card span{
+
+.section-6 .card span {
     font-size: 11px;
     color: #676767;
 }
@@ -828,6 +834,12 @@ footer a i:hover {
     overflow: hidden;
 }
 
+/* blog-plp */
+.blog-section1{
+    background: linear-gradient(180deg, #213D6C 0%, #4077D2 100%);
+    padding: 50px 0;
+}
+
 /* responsive */
 @media screen and (max-width: 600px) {
     .hero-main {
@@ -911,7 +923,7 @@ footer a i:hover {
     }
 
     .blog-card-img {
-        height: 200px;
+        height: fit-content;
     }
 
     .team-img {
@@ -937,10 +949,6 @@ footer a i:hover {
     .faq-filters {
         display: flex;
         flex-direction: column;
-    }
-
-    .section-3 .card img {
-        height: 200px !important;
     }
 
     .mentor-card-img {
@@ -978,11 +986,55 @@ footer a i:hover {
     }
 
     .hero-section .shape12 {
-        top: 65%;
+        top: 59%;
         right: 0px;
         z-index: 9;
-        left: 39%;
+        left: 41%;
     }
+
+    .btn-mentor {
+        top: 280px;
+    }
+    .section-6 .card h5 {
+        font-size: 25px;
+    }
+
+    .section-6 .card span {
+        font-size: 21px;
+    }
+
+    .section-6 .card p {
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 415px) and (max-width: 450px) {
+        .hero-main {
+        height: 85vh;
+    }
+        .hero-section {
+        height: 85vh;
+    }
+        .bg-opac {
+        height: 85vh;
+    }
+    .hero-section .shape12 {
+        top: 64%;
+        right: 0px;
+        z-index: 9;
+        left: 41%;
+    }
+
+}
+
+@media (min-width: 381px) and (max-width: 400px) {
+    .hero-section .shape12 {
+        top: 67%;
+        right: 0px;
+        z-index: 9;
+        left: 40%;
+    }
+
 }
 
 /* responsive */
@@ -1068,7 +1120,7 @@ footer a i:hover {
     }
 
     .blog-card-img {
-        height: 200px;
+        height: fit-content;
     }
 
     .team-img {
@@ -1094,10 +1146,6 @@ footer a i:hover {
     .faq-filters {
         display: flex;
         flex-direction: column;
-    }
-
-    .section-3 .card img {
-        height: 200px !important;
     }
 
     .mentor-card-img {
@@ -1135,11 +1183,27 @@ footer a i:hover {
         z-index: 9;
         left: 39%;
     }
+
+    .btn-mentor {
+        top: 280px;
+    }
+
+    .section-6 .card h5 {
+        font-size: 25px;
+    }
+
+    .section-6 .card span {
+        font-size: 21px;
+    }
+
+    .section-6 .card p {
+        font-size: 21px;
+    }
 }
 
 @media (min-width: 1500px) and (max-width: 1920px) {
     .hero-section .shape12 {
-    top: 296px;
-    right: 30.5%;
+        top: 296px;
+        right: 30.5%;
     }
 }
