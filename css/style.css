@@ -603,14 +603,14 @@ footer a i:hover {
 /* PDP */
 .pdp-main {
     position: relative;
-    height: 60vh;
+    height: 55vh;
 }
 
 .pdp-hero-section {
     background-image: url('../images/hero-img-bg.jpg');
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 55vh;
     overflow: hidden;
     position: absolute;
     inset: 0;
@@ -618,7 +618,7 @@ footer a i:hover {
 
 .pdp-bg-opac {
     background-color: #0f2239dd;
-    height: 60vh;
+    height: 55vh;
     overflow: hidden;
     position: absolute;
     left: 0;
@@ -892,15 +892,15 @@ footer a i:hover {
     }
 
     .pdp-main {
-        height: 110vh;
+        height: 75vh;
     }
 
     .pdp-hero-section {
-        height: 110vh;
+        height: 75vh;
     }
 
     .pdp-bg-opac {
-        height: 110vh;
+        height: 75vh;
     }
 
     .pdp-hero-section h1 {
@@ -911,11 +911,18 @@ footer a i:hover {
     .vertical-tab .nav-pills {
         overflow-x: scroll;
         flex-direction: row !important;
-        flex-wrap: nowrap;
+        flex-wrap: balance;
+        margin-bottom: 20px;
+    }
+    .vertical-tab .nav-pills.me-3{
+        margin-right: 0px !important;
     }
 
     .vertical-tab {
         display: block !important;
+    }
+    .vertical-tab .nav-pills .nav-link{
+        padding: 10px 10px;
     }
 
     #price .card {
@@ -1024,6 +1031,17 @@ footer a i:hover {
         z-index: 9;
         left: 41%;
     }
+    .pdp-main {
+        height: 70vh;
+    }
+
+    .pdp-hero-section {
+        height: 70vh;
+    }
+
+    .pdp-bg-opac {
+        height: 70vh;
+    }
 
 }
 
@@ -1089,15 +1107,15 @@ footer a i:hover {
     }
 
     .pdp-main {
-        height: 110vh;
+        height: 95vh;
     }
 
     .pdp-hero-section {
-        height: 110vh;
+        height: 95vh;
     }
 
     .pdp-bg-opac {
-        height: 110vh;
+        height: 95vh;
     }
 
     .pdp-hero-section h1 {

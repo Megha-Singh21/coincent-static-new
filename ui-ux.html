@@ -118,14 +118,13 @@
                                     Syllabus</a>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="video-domain mb-3">
-                                <iframe width="100%" height="300" src="https://www.youtube.com/embed/j4qNeYgB7vg?rel=0&modestbranding=1&showinfo=0&controls=1"
-                        title="Coincent Microsoft certification" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
+                            <div class="mb-3">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#guideModal">
+                                    <img src="images/pdp-domain.png" width="100%" alt="">
+                                </a>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -143,18 +142,18 @@
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
                                         data-bs-target="#home" type="button" role="tab" aria-controls="home"
-                                        aria-selected="true">Year 1:
-                                        Training</button>
+                                        aria-selected="true">Year 1<span class="d-none d-lg-inline">:
+                                        Training</span></button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
                                         data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
-                                        aria-selected="false">Year 2: Live Project</button>
+                                        aria-selected="false">Year 2<span class="d-none d-lg-inline">: Live Project</span></button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
                                         data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
-                                        aria-selected="false">Year 3: Internship</button>
+                                        aria-selected="false">Year 3<span class="d-none d-lg-inline">: Internship</span></button>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
@@ -701,14 +700,14 @@
 
     <div class="container pb-5 pt-5">
         <div class="row">
-            <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <div class="col-md-5 d-flex align-items-center justify-content-center">
                 <div>
                     <h2 class="head-2 ls-1"><span class="text-blue">Elevate Your Career</span> with Coincent UI/UX Design Certification</h2>
-                    <p class="mt-4">Tailored to improve your professional skills and unlock new career prospects.</p>
+                    <h5 class="mt-4">Tailored to improve your professional skills and unlock new career prospects.</h5>
 
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card mb-3">
@@ -1615,6 +1614,24 @@
             </div>
         </div>
     </footer>
+
+     <!-- Guide video Modal -->
+    <div class="modal fade" id="guideModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe width="100%" height="400px"
+                        src="https://www.youtube.com/embed/j4qNeYgB7vg?rel=0&modestbranding=1&showinfo=0&controls=1"
+                        title="Coincent Microsoft certification" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
