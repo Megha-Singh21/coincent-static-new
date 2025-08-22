@@ -1274,9 +1274,15 @@ footer a i:hover {
     }
 }
 
-@media (min-width: 1500px) and (max-width: 1920px) {
+@media (min-width: 1530px) and (max-width: 1920px) {
     .hero-section .shape12 {
         top: 296px;
         right: 30.5%;
+    }
+}
+@media (min-width: 1490px) and (max-width: 1529px) {
+    .hero-section .shape12 {
+        top: 296px;
+        right: 400px;
     }
 }
