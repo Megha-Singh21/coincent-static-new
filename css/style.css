@@ -845,6 +845,14 @@ footer a i:hover {
     height: 350px;
 }
 
+.key-highlight .card{
+    height: 150px;
+}
+.syllabus.card{
+    height: 700px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
 .mentor-plp .card {
     width: 35%;
 }
@@ -1070,6 +1078,10 @@ footer a i:hover {
     .section-6 .card p {
         font-size: 21px;
     }
+    .syllabus.card{
+    height: fit-content;
+    }
+
 }
 
 @media (min-width: 415px) and (max-width: 450px) {
@@ -1284,6 +1296,9 @@ footer a i:hover {
 
     .section-6 .card p {
         font-size: 21px;
+    }
+    .syllabus.card{
+    height: fit-content;
     }
 }
 @media (min-width: 1490px) and (max-width: 1600px) {
